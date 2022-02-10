@@ -1,0 +1,7 @@
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\E1\OOP.ConsoleAct\OOP.ConsoleAct\bin\Debug\OOP.ConsoleAct.exe.config
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\E1\OOP.ConsoleAct\OOP.ConsoleAct\bin\Debug\OOP.ConsoleAct.exe
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\E1\OOP.ConsoleAct\OOP.ConsoleAct\bin\Debug\OOP.ConsoleAct.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\E1\OOP.ConsoleAct\OOP.ConsoleAct\obj\Debug\OOP.ConsoleAct.csproj.AssemblyReference.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\E1\OOP.ConsoleAct\OOP.ConsoleAct\obj\Debug\OOP.ConsoleAct.csproj.CoreCompileInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\E1\OOP.ConsoleAct\OOP.ConsoleAct\obj\Debug\OOP.ConsoleAct.exe
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\E1\OOP.ConsoleAct\OOP.ConsoleAct\obj\Debug\OOP.ConsoleAct.pdb

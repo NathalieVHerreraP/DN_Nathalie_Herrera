@@ -49,11 +49,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AudioManager\AudioManager.csproj">
-      <Project>{49f1e63e-0a7a-4ec6-85a4-f4c3e1f19e49}</Project>
-      <Name>AudioManager</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
