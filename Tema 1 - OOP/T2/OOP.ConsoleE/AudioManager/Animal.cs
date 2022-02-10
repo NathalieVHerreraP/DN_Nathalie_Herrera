@@ -8,8 +8,9 @@ namespace AudioManager
 {
     public class Animal
     {
-        public void AnimalSound() {
+        public virtual void AnimalSound() {
             Console.WriteLine("I'm a nice animal");
+
         }
 
     }

@@ -11,11 +11,52 @@ namespace OOP.ConsoleE
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Lil World!");
+            while (true)
+            {
+                Console.WriteLine("Type the animal");
 
-            Animal animal = new Animal();
-            animal.AnimalSound();
+                String animalType = Console.ReadLine().ToLower();
 
+                Animal animal = null;
+
+                switch (animalType)
+                {
+                    case "dog":
+                        animal = new Dog();
+                        break;
+
+                    case "cat":
+                        animal = new Cat();
+                        break;
+
+                    case "lion":
+                        animal = new Lion();
+                        break;
+
+                    case "elephant":
+                        animal = new Elephant();
+                        break;
+
+                    case "cow":
+                        animal = new Cow();
+                        break;
+
+                    case "pig":
+                        animal = new Pig();
+                        break;
+
+                    default:
+                        Console.WriteLine("Animal not found");
+                        break;
+                }
+
+                if (animal != null)
+                {
+                    animal.AnimalSound();
+                }
+            }
+
+            
 
             Console.ReadKey();
 
