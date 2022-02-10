@@ -1,0 +1,6 @@
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\T1\OOP.ConsoleE\AudioManager\bin\Debug\AudioManager.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\T1\OOP.ConsoleE\AudioManager\bin\Debug\AudioManager.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\T1\OOP.ConsoleE\AudioManager\obj\Debug\AudioManager.csproj.AssemblyReference.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\T1\OOP.ConsoleE\AudioManager\obj\Debug\AudioManager.csproj.CoreCompileInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\T1\OOP.ConsoleE\AudioManager\obj\Debug\AudioManager.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 1 - OOP\T1\OOP.ConsoleE\AudioManager\obj\Debug\AudioManager.pdb
