@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Gym Manager</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+    <link href="~/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="~/Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Bootstrap/css/PersonalizedStylesheet.css" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="~/Images/gymLogo.png">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @@media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        main > .container {
+            padding: 60px 15px 0;
+        }
+    </style>
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-newBG">
+            <div class="container-fluid">
+                <img class="imgLogo" src="~/Images/gymLogo.png" width="75" height="75" />
+                <a class="navbar-brand" href="#">Gym Manager</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal fade" id="membersModal" tabindex="-1" role="dialog" aria-labelledby="EjemploModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="EjemploModalLabel">Members</h5>
+                </div>
+                <div class="modal-body">
+                    <table id="memebersActions">
+                        <thead>
+                            <tr>
+                                <td>Action</td>
+                                <td>Member ID</td>
+                                <td>Date</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quit</button>                    @*<button type="button" class="btn btn-primary">Guardar</button>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div class="container">
+
+            <div class="mt-5">
+
+                <p><label for="IDMember">Member ID:</label></p>
+                <p><input id="IDMember" type="text" name="In" /></p>
+                <p><button id="memberbtn" class="btn btn-primary" type="button" data-toggle="modal" data-target="#membersModal">Register</button></p>
+                <input type="hidden" id="action" value="out" />
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
+
+    <script src="~/in-out.js"></script>
+    <script src="~/lib/moment.js"></script>
+    <script src="~/lib/jquery.js"></script>
+    <script src="~/Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
