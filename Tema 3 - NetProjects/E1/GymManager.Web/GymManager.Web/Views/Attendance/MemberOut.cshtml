@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="modal fade" id="membersModal" tabindex="-1" role="dialog" aria-labelledby="EjemploModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="EjemploModalLabel">Members</h5>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Action</td>
+                                <td>Member ID</td>
+                                <td>Date</td>
+                            </tr>
+                        </thead>
+                        <tbody id="memebersActions">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quit</button>                    @*<button type="button" class="btn btn-primary">Guardar</button>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div class="container">
+
+            <div class="mt-5">
+
+                <p><label for="IDMember">Member ID:</label></p>
+                <p><input id="IDMember" type="text" name="In" /></p>
+                <p><button id="memberbtn" class="btn btn-primary" type="button" data-toggle="modal" data-target="#membersModal">Quit</button></p>
+                <input type="hidden" id="action" value="out" />
+
+            </div>
+        </div>
+    </main>
+
+
+
+
