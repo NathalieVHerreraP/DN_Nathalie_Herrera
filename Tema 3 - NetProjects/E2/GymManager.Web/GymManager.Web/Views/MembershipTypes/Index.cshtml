@@ -1,0 +1,49 @@
+﻿@model GymManager.Web.Models.MembershipTypeListViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-6">
+            <h1 class="mt-5">Members</h1>
+        </div>
+        <div class="col-6">
+            <a asp-action="Create" class="btn btn-outline-success">Add Member</a>
+        </div>
+
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Created On</th>
+                <th scope="col">Duration</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var membership in Model.Membership)
+            {
+                <tr>
+                    <th scope="row">@membership.Name</th>
+                    <td>@membership.Cost</td>
+                    <td>@membership.CreatedOn.ToString("dd/MM/yyyy")</td>
+                    <td>@membership.Duration</td>
+                    <td>
+                        <a asp-action="Edit" class="btn btn-outline-info" asp-route-membershipId="@membership.Id">Edit</a>
+                    </td>
+                    <td>
+                        <a asp-action="Delete" class="btn btn-outline-danger" asp-route-membershipId="@membership.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

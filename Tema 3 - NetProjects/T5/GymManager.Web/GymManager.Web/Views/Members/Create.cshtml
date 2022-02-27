@@ -1,0 +1,90 @@
+﻿@model GymManager.Core.Members.Member
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Head{
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <link href="~/lib/jqueryui/jquery-ui.min.css" rel="stylesheet" />
+
+    <link href="~/lib/jqueryui/jquery-ui.structure.min.css" rel="stylesheet" />
+
+    <link href="~/lib/jqueryui/jquery-ui.theme.min.css" rel="stylesheet" />
+
+}
+
+@section Scripts{
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script src="~/lib/jqueryui/jquery-ui.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="~/Views/Members/Create.js"></script>
+
+}
+
+<div class="container">
+
+    <h3 class="mt-5">Member Registration</h3>
+
+    <form asp-action="Create">
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">First Name</label>
+            <input type="text" class="form-control" asp-for="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="LastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" asp-for="LastName" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+
+        </div>
+
+        @*jquery-ui frameworks doesn't properly works in Birthday input, even tho is exactly as in the tutorial (I guess-)*@
+        <div class="mb-3">
+            <label asp-for="Birthday" class="form-label">Date of birth</label>
+            <input class="form-control" asp-for="Birthday" />
+            <span asp-validation-for="Birthday" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+
+            <label asp-for="CityId" class="form-label">City</label>
+            <select class="form-control" asp-for="CityId">
+                <option value="1">Alabama</option>
+                <option value="2">Alaska</option>
+                <option value="3">Arizona</option>
+                <option value="4">Arkansas</option>
+                <option value="5">California</option>
+                <option value="6">Colorado</option>
+            </select>
+            <span asp-validation-for="CityId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">Email address</label>
+            <input type="email" class="form-control" asp-for="Email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+        </div>
+
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input" asp-for="AllowNewsletter" />
+            <label asp-for="AllowNewsletter" class="form-check-label">Subscribe to our newsletter?</label>
+        </div>
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+
+    </form>
+</div>
