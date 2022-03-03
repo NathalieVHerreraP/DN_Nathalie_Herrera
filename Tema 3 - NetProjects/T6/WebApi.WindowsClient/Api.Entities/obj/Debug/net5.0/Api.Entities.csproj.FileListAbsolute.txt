@@ -1,0 +1,12 @@
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\bin\Debug\net5.0\Api.Entities.deps.json
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\bin\Debug\net5.0\Api.Entities.dll
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\bin\Debug\net5.0\ref\Api.Entities.dll
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\bin\Debug\net5.0\Api.Entities.pdb
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\obj\Debug\net5.0\Api.Entities.csproj.AssemblyReference.cache
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\obj\Debug\net5.0\Api.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\obj\Debug\net5.0\Api.Entities.AssemblyInfoInputs.cache
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\obj\Debug\net5.0\Api.Entities.AssemblyInfo.cs
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\obj\Debug\net5.0\Api.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\obj\Debug\net5.0\Api.Entities.dll
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\obj\Debug\net5.0\ref\Api.Entities.dll
+C:\Users\Nath\source\repos\WebApi.WindowsClient\Api.Entities\obj\Debug\net5.0\Api.Entities.pdb
