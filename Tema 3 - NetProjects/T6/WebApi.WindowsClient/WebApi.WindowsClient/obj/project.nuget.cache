@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z46k4xiNtnUiq6hFs+JtupZ5vzWfJwfVClmhXwwdtg48asg+Ce4KKc41i0Z9KCFkHHekosJlQAOStj2GbXod0A==",
+  "dgSpecHash": "YgKyDTCuCYX4SgvLiJtdsysXjBJkZrr1p9QP/KKiE54awKU9eqiFLCPpiFvk7BsquW/jqj8/pWYuPepdvpPF7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nath\\source\\repos\\WebApi.WindowsClient\\WebApi.WindowsClient\\WebApi.WindowsClient.csproj",
+  "projectFilePath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 3 - NetProjects\\T6\\WebApi.WindowsClient\\WebApi.WindowsClient\\WebApi.WindowsClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nath\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

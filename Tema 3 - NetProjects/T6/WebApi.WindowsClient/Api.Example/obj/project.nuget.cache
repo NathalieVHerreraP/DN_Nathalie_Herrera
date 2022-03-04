@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tJN23HcdRd5it+8Q/b3KHTJBlfvuHSGSskSWdz1DCIVxWIHLCHNkc8lSAJ0lfJ4NSWiiDRk21ZEW7dks0Ft6vg==",
+  "dgSpecHash": "tRCALvprH/xVu2v6OQ8llPF9/8CNL8ySq2esPzCpmEZACSqpAegxhDt8uhwur7w9QHNPfZCLVYIycS5IxoHiaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nath\\source\\repos\\WebApi.WindowsClient\\Api.Example\\Api.Example.csproj",
+  "projectFilePath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 3 - NetProjects\\T6\\WebApi.WindowsClient\\Api.Example\\Api.Example.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nath\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Nath\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
