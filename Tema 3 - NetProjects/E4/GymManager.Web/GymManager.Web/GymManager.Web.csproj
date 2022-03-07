@@ -21,4 +21,8 @@
     <ProjectReference Include="..\GymManager.DataAccess\GymManager.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Logtexts\" />
+  </ItemGroup>
+
 </Project>

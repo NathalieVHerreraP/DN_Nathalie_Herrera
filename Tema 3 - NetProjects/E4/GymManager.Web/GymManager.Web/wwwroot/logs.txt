@@ -1,0 +1,4 @@
+2022-03-06 22:37:55.121 -06:00 [INF] Member index was acceded
+2022-03-06 22:40:46.255 -06:00 [INF] Member index was acceded
+2022-03-06 22:45:26.473 -06:00 [INF] Member index was acceded
+2022-03-06 22:49:02.848 -06:00 [INF] Member index was acceded

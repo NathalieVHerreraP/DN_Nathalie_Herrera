@@ -15,8 +15,7 @@ namespace GymManager.Web
     {
         public static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration().
-                MinimumLevel.Information()
+            Log.Logger = new LoggerConfiguration()
                 .WriteTo.Debug(new RenderedCompactJsonFormatter())
                 .WriteTo.File("Logtexts/logs.txt", rollingInterval: RollingInterval.Day)
                 .CreateLogger();

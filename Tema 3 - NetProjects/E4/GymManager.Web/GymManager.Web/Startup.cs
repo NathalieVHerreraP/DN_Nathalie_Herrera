@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -33,7 +34,13 @@ namespace GymManager.Web
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddSingleton((ILogger)new LoggerConfiguration()
+            .MinimumLevel.Information()
+            .WriteTo.File("wwwroot/logs.txt")
+            .CreateLogger());
+
             string connectionString = Configuration.GetConnectionString("Default");
+
 
             services.AddDbContext<GymManagerContext>(options => 
             options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
@@ -44,6 +51,7 @@ namespace GymManager.Web
             services.ConfigureApplicationCookie(options => options.LoginPath = "/Account/LogIn");
 
 
+            
 
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
@@ -65,7 +73,9 @@ namespace GymManager.Web
 
             //Configure the Localization middleware
             app.UseRequestLocalization(new RequestLocalizationOptions 
-            { 
+            {
+
+                
                 DefaultRequestCulture = new RequestCulture(ci),
                 SupportedCultures = new List<CultureInfo> 
                 { 
@@ -82,6 +92,8 @@ namespace GymManager.Web
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            
 
             app.UseRouting();
 

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Serilog;
 
 namespace GymManager.Web.Controllers
 {
@@ -14,10 +15,14 @@ namespace GymManager.Web.Controllers
     public class MembersController : Controller
     {
         private readonly iMembersAppService _memberAppService;
+        private readonly ILogger _logger;
 
-        public MembersController(iMembersAppService memberAppService)
+        public MembersController(iMembersAppService memberAppService, ILogger logger)
         {
             _memberAppService = memberAppService;
+            _logger = logger;
+
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         public IActionResult Index()
@@ -29,7 +34,7 @@ namespace GymManager.Web.Controllers
 
             viewModel.NewMembersCount = 2;
             viewModel.Members = members;
-
+            _logger.Information("Member index was acceded");
             return View(viewModel);
         }
 

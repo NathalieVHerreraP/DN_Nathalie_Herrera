@@ -1662,7 +1662,6 @@ C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.Xml.dll
-C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -1674,19 +1673,15 @@ C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Http.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.dll
-C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Configuration.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Console.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Debug.dll
-C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.EventLog.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.EventSource.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.TraceSource.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.ObjectPool.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
-C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.dll
-C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Primitives.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.WebEncoders.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.JSInterop.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Net.Http.Headers.dll
@@ -1785,7 +1780,6 @@ C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\System.Resources.Reader.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\System.Resources.ResourceManager.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\System.Resources.Writer.dll
-C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.VisualC.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\System.Runtime.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\System.Runtime.Extensions.dll
@@ -1951,3 +1945,9 @@ C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\obj\Debug\net5.0\ref\GymManager.Web.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\obj\Debug\net5.0\GymManager.Web.pdb
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\obj\Debug\net5.0\GymManager.Web.genruntimeconfig.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\Microsoft.Extensions.Primitives.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\E4\GymManager.Web\GymManager.Web\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.Unsafe.dll
