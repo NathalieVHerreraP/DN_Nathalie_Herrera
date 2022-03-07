@@ -36,7 +36,7 @@ namespace GymManager.Web
 
             services.AddSingleton((ILogger)new LoggerConfiguration()
             .MinimumLevel.Information()
-            .WriteTo.File("wwwroot/logs.txt")
+            .WriteTo.File("Logtexts/logs.txt")
             .CreateLogger());
 
             string connectionString = Configuration.GetConnectionString("Default");
