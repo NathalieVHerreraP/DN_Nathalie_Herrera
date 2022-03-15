@@ -1,0 +1,1 @@
+call NewSale (3,2);

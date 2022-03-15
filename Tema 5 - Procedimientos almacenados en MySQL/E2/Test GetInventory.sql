@@ -1,0 +1,1 @@
+call GetInventory(1);
