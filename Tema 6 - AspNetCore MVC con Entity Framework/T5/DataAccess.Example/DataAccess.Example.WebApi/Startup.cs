@@ -37,6 +37,13 @@ namespace DataAccess.Example.WebApi
                 );
 
             services.AddTransient<IQueriesExample, QueriesExample>();
+            services.AddTransient<IColorsDataManager, ColorsDataManager>();
+            services.AddTransient<IVehiclesDataManager, VehiclesDataManager>();
+
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
 
             services.AddControllers().AddNewtonsoftJson(x =>
                 x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);

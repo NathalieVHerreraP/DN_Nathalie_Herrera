@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\T3\\DataAccess.Example\\DataAccess.Example\\DataAccess.Example.csproj",
+      "projectUniqueName": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\T5\\DataAccess.Example\\DataAccess.Example\\DataAccess.Example.csproj",
       "projectName": "DataAccess.Example",
-      "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\T3\\DataAccess.Example\\DataAccess.Example\\DataAccess.Example.csproj",
+      "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\T5\\DataAccess.Example\\DataAccess.Example\\DataAccess.Example.csproj",
       "packagesPath": "C:\\Users\\Nath\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\T3\\DataAccess.Example\\DataAccess.Example\\obj\\",
+      "outputPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\T5\\DataAccess.Example\\DataAccess.Example\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nath\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xfeRidBsjDa9nnJ2Z87E/PyiS1W7sLnEVcjz2BxuKBLiaUxb56bncovCp93WLMDpBY0tRHV90i38I4IUozn+Hg==",
+  "dgSpecHash": "ZTegUkjWb2XXtUaRYA5g2Ofmcoqj2c1TxWN7EmYt6PVnv323yoswa+lukQ11ReteuLXQJZC961q8s4VSk3Yz4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\T3\\DataAccess.Example\\DataAccessExample.Core\\DataAccess.Example.Core.csproj",
+  "projectFilePath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\T5\\DataAccess.Example\\DataAccessExample.Core\\DataAccess.Example.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
