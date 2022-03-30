@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace GymManager.DataAccess
 {
-    public class GymManagerContext : DbContext
+    public class GymManagerContext : IdentityDbContext
     {
         public virtual DbSet<Member> Members { get; set; }
         public virtual DbSet<MembershipType> MembershipTypes { get; set; }

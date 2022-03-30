@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GymManager.DataAccess.Migrations
 {
     [DbContext(typeof(GymManagerContext))]
-    [Migration("20220327040831_ManagerMigration")]
-    partial class ManagerMigration
+    [Migration("20220330031751_MemberMigration")]
+    partial class MemberMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -220,11 +220,11 @@ namespace GymManager.DataAccess.Migrations
             modelBuilder.Entity("GymManager.Core.Members.Member", b =>
                 {
                     b.HasOne("GymManager.Core.Members.City", "City")
-                        .WithMany()
+                        .WithMany("Members")
                         .HasForeignKey("CityId");
 
                     b.HasOne("GymManager.Core.Members.MembershipType", "MembershipType")
-                        .WithMany()
+                        .WithMany("Members")
                         .HasForeignKey("MembershipTypeId");
 
                     b.Navigation("City");
@@ -254,6 +254,16 @@ namespace GymManager.DataAccess.Migrations
                         .HasForeignKey("ProductTypeId");
 
                     b.Navigation("ProductType");
+                });
+
+            modelBuilder.Entity("GymManager.Core.Members.City", b =>
+                {
+                    b.Navigation("Members");
+                });
+
+            modelBuilder.Entity("GymManager.Core.Members.MembershipType", b =>
+                {
+                    b.Navigation("Members");
                 });
 #pragma warning restore 612, 618
         }

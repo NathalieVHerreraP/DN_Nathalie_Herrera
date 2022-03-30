@@ -17,8 +17,8 @@ namespace GymManager.DataAccess.Repositories
 
         public override async Task<Member> AddAsync(Member entity)
         {
-            var city = await Context.Cities.FindAsync(entity.CityId.Id);
-            entity.CityId = null;
+            var city = await Context.Cities.FindAsync(entity.City.Id);
+            entity.City = null;
             await Context.Members.AddAsync(entity);
             city.Members.Add(entity);
 
@@ -29,7 +29,7 @@ namespace GymManager.DataAccess.Repositories
 
         public async override Task<Member> GetAsync(int id)
         {
-            var member = await Context.Members.Include(x => x.CityId).FirstOrDefaultAsync(x => x.Id == id);
+            var member = await Context.Members.Include(x => x.City).FirstOrDefaultAsync(x => x.Id == id);
 
             return member;
         }

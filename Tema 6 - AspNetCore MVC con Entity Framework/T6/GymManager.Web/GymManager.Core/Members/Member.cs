@@ -30,7 +30,7 @@ namespace GymManager.Core.Members
         public DateTime Birthday { get; set; }
 
         [Range(1 , 100)]
-        public City CityId { get; set; }
+        public City City { get; set; }
 
         [EmailAddress]
         [Required]

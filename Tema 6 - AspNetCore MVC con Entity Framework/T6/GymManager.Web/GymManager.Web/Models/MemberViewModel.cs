@@ -22,7 +22,7 @@ namespace GymManager.Web.Models
         public DateTime Birthday { get; set; }
 
         
-        public City CityId { get; set; }
+        public int CityId { get; set; }
 
        
         public string Email { get; set; }

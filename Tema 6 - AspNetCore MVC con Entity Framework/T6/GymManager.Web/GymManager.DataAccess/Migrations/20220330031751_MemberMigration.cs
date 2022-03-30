@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GymManager.DataAccess.Migrations
 {
-    public partial class ManagerMigration : Migration
+    public partial class MemberMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -36,7 +36,7 @@ namespace GymManager.DataAccess.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Brand = table.Column<string>(type: "varchar(45)", maxLength: 45, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Cost = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    Cost = table.Column<decimal>(type: "decimal(13,2)", nullable: false),
                     Units = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -67,8 +67,8 @@ namespace GymManager.DataAccess.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Size = table.Column<string>(type: "varchar(1)", maxLength: 1, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Weight = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
-                    Cost = table.Column<decimal>(type: "decimal(65,30)", nullable: false)
+                    Weight = table.Column<decimal>(type: "decimal(13,2)", nullable: false),
+                    Cost = table.Column<decimal>(type: "decimal(13,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -84,7 +84,7 @@ namespace GymManager.DataAccess.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Type = table.Column<string>(type: "varchar(45)", maxLength: 45, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Cost = table.Column<decimal>(type: "decimal(65,30)", nullable: false)
+                    Cost = table.Column<decimal>(type: "decimal(13,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -165,7 +165,7 @@ namespace GymManager.DataAccess.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    TotalCost = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    TotalCost = table.Column<decimal>(type: "decimal(13,2)", nullable: false),
                     SellDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     ProductQuantity = table.Column<int>(type: "int", nullable: false),
                     ProductTypeId = table.Column<int>(type: "int", nullable: true)

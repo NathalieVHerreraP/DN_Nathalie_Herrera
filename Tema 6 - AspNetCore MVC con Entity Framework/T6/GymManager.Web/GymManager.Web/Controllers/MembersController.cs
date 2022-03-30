@@ -44,8 +44,22 @@ namespace GymManager.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Member member)
+        public async Task<IActionResult> Create(MemberViewModel viewModel)
         {
+
+            Member member = new Member
+            {
+                Name = viewModel.Name,
+                LastName = viewModel.LastName,
+                Email = viewModel.Email,
+                City = new City
+                { 
+                    Id = viewModel.CityId
+                },
+                Birthday = viewModel.Birthday,
+                AllowNewsletter = viewModel.AllowNewsletter
+
+            };
 
             await _memberAppService.AddMemberAsync(member);
 
@@ -69,7 +83,7 @@ namespace GymManager.Web.Controllers
             {
                 AllowNewsletter = member.AllowNewsletter,
                 Birthday = member.Birthday,
-                CityId = member.CityId,
+                CityId = member.City.Id,
                 Email = member.Email,
                 Id = member.Id,
                 LastName = member.LastName,
