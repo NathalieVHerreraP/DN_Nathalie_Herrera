@@ -3144,8 +3144,6 @@ C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MV
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\GymManager.Web.TagHelpers.output.cache
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\GymManager.Web.RazorCoreGenerate.cache
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
-C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\Equipment\Create.cshtml.g.cs
-C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\Equipment\Index.cshtml.g.cs
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\Members\Create.cshtml.g.cs
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\Members\Edit.cshtml.g.cs
@@ -3163,3 +3161,6 @@ C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MV
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\GymManager.Web.Views.pdb
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\GymManager.Web.csproj.CopyComplete
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\GymManager.Web.genruntimeconfig.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\EquipmentTypes\Create.cshtml.g.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\EquipmentTypes\Edit.cshtml.g.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\EquipmentTypes\Index.cshtml.g.cs

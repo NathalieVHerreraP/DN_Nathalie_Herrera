@@ -342,3 +342,45 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
    at Microsoft.Extensions.Hosting.HostBuilder.Build()
    at GymManager.Web.Program.Main(String[] args) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Program.cs:line 26
+2022-03-30 18:30:57.518 -06:00 [INF] Starting Web Host
+2022-03-30 18:31:05.258 -06:00 [FTL] Host Terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: GymManager.ApplicationServices.Products.iEquipmentTypesAppService Lifetime: Transient ImplementationType: GymManager.ApplicationServices.Products.EquipmentTypesAppService': Unable to resolve service for type 'GymManager.DataAccess.Repositories.IRepository`2[System.Int32,GymManager.Core.Products.EquipmentType]' while attempting to activate 'GymManager.ApplicationServices.Products.EquipmentTypesAppService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: GymManager.ApplicationServices.Products.iEquipmentTypesAppService Lifetime: Transient ImplementationType: GymManager.ApplicationServices.Products.EquipmentTypesAppService': Unable to resolve service for type 'GymManager.DataAccess.Repositories.IRepository`2[System.Int32,GymManager.Core.Products.EquipmentType]' while attempting to activate 'GymManager.ApplicationServices.Products.EquipmentTypesAppService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'GymManager.DataAccess.Repositories.IRepository`2[System.Int32,GymManager.Core.Products.EquipmentType]' while attempting to activate 'GymManager.ApplicationServices.Products.EquipmentTypesAppService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at GymManager.Web.Program.Main(String[] args) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Program.cs:line 26
+2022-03-30 18:42:03.634 -06:00 [INF] Starting Web Host
+2022-03-30 18:42:09.958 -06:00 [FTL] Host Terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: GymManager.ApplicationServices.Products.iEquipmentTypesAppService Lifetime: Transient ImplementationType: GymManager.ApplicationServices.Products.EquipmentTypesAppService': Unable to resolve service for type 'GymManager.DataAccess.Repositories.IRepository`2[System.Int32,GymManager.Core.Products.EquipmentType]' while attempting to activate 'GymManager.ApplicationServices.Products.EquipmentTypesAppService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: GymManager.ApplicationServices.Products.iEquipmentTypesAppService Lifetime: Transient ImplementationType: GymManager.ApplicationServices.Products.EquipmentTypesAppService': Unable to resolve service for type 'GymManager.DataAccess.Repositories.IRepository`2[System.Int32,GymManager.Core.Products.EquipmentType]' while attempting to activate 'GymManager.ApplicationServices.Products.EquipmentTypesAppService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'GymManager.DataAccess.Repositories.IRepository`2[System.Int32,GymManager.Core.Products.EquipmentType]' while attempting to activate 'GymManager.ApplicationServices.Products.EquipmentTypesAppService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at GymManager.Web.Program.Main(String[] args) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Program.cs:line 26
