@@ -1,5 +1,6 @@
 ﻿using GymManager.ApplicationServices.Products;
 using GymManager.Core.Products;
+using GymManager.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -24,7 +25,11 @@ namespace GymManager.Web.Controllers
 
             List<EquipmentType> equipment = await _equipmentAppService.GetEquipmentsAsync();
 
-            return View(equipment);
+            EquipmentTypeListViewModel equipmentType = new EquipmentTypeListViewModel();
+
+            equipmentType.EquipmentTypes = equipment;
+
+            return View(equipmentType);
         }
 
         public IActionResult Create()
@@ -57,8 +62,18 @@ namespace GymManager.Web.Controllers
 
             EquipmentType equipment = await _equipmentAppService.GetEquipmentAsync(equipmentId);
 
+            EquipmentTypeViewModel equipmentType = new EquipmentTypeViewModel 
+            { 
+                Id = equipment.Id,
+                Name = equipment.Name,
+                Brand = equipment.Brand,
+                Cost = equipment.Cost,
+                Units = equipment.Units
+            };
 
-            return View(equipment);
+
+
+            return View(equipmentType);
         }
 
         [HttpPost]

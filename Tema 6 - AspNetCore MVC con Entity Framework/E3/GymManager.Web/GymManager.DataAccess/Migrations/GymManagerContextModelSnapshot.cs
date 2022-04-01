@@ -57,9 +57,6 @@ namespace GymManager.DataAccess.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");
 
-                    b.Property<int?>("MembershipTypeId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("Membersince")
                         .HasColumnType("datetime(6)");
 
@@ -71,8 +68,6 @@ namespace GymManager.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CityId");
-
-                    b.HasIndex("MembershipTypeId");
 
                     b.ToTable("Members");
                 });
@@ -86,12 +81,23 @@ namespace GymManager.DataAccess.Migrations
                     b.Property<decimal>("Cost")
                         .HasColumnType("decimal(65,30)");
 
+                    b.Property<int>("MemberId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MonthsDuration")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("StartingDate")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasMaxLength(45)
                         .HasColumnType("varchar(45)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MemberId");
 
                     b.ToTable("MembershipTypes");
                 });
@@ -417,13 +423,18 @@ namespace GymManager.DataAccess.Migrations
                         .WithMany("Members")
                         .HasForeignKey("CityId");
 
-                    b.HasOne("GymManager.Core.Members.MembershipType", "MembershipType")
-                        .WithMany("Members")
-                        .HasForeignKey("MembershipTypeId");
-
                     b.Navigation("City");
+                });
 
-                    b.Navigation("MembershipType");
+            modelBuilder.Entity("GymManager.Core.Members.MembershipType", b =>
+                {
+                    b.HasOne("GymManager.Core.Members.Member", "Member")
+                        .WithMany("MembershipTypes")
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Member");
                 });
 
             modelBuilder.Entity("GymManager.Core.Products.ProductType", b =>
@@ -506,9 +517,9 @@ namespace GymManager.DataAccess.Migrations
                     b.Navigation("Members");
                 });
 
-            modelBuilder.Entity("GymManager.Core.Members.MembershipType", b =>
+            modelBuilder.Entity("GymManager.Core.Members.Member", b =>
                 {
-                    b.Navigation("Members");
+                    b.Navigation("MembershipTypes");
                 });
 #pragma warning restore 612, 618
         }

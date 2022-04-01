@@ -57,7 +57,8 @@ namespace GymManager.Web.Controllers
                     Id = viewModel.CityId
                 },
                 Birthday = viewModel.Birthday,
-                AllowNewsletter = viewModel.AllowNewsletter
+                AllowNewsletter = viewModel.AllowNewsletter,
+                Membersince = DateTime.Now
 
             };
 

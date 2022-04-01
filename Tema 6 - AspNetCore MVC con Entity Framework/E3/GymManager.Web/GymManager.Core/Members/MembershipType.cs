@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -19,12 +20,14 @@ namespace GymManager.Core.Members
         [Required]
         public decimal Cost { get; set; }
 
-        public List<Member> Members { get; set; }
+        [BindProperty, DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime StartingDate { get; set; }
 
-        public MembershipType()
-        {
-            Members = new List<Member>();
-        }
+        [Required]
+        public int MonthsDuration { get; set; }
+
+        [Required]
+        public Member Member { get; set; }
 
     }
 }

@@ -3164,3 +3164,6 @@ C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MV
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\EquipmentTypes\Create.cshtml.g.cs
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\EquipmentTypes\Edit.cshtml.g.cs
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\EquipmentTypes\Index.cshtml.g.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\Shared\_MembershipList.cshtml.g.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\MembershipTypes\Index.cshtml.g.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\obj\Debug\net5.0\Razor\Views\MembershipTypes\Create.cshtml.g.cs

@@ -2,6 +2,7 @@ using GymManager.ApplicationServices.Members;
 using GymManager.ApplicationServices.Navegation;
 using GymManager.ApplicationServices.Products;
 using GymManager.Core.Members;
+using GymManager.Core.Products;
 using GymManager.DataAccess;
 using GymManager.DataAccess.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -63,10 +64,14 @@ namespace GymManager.Web
             //services.AddScoped<iMembersAppService, MembersAppService>();
 
             services.AddTransient<iEquipmentTypesAppService, EquipmentTypesAppService>();
-
+            services.AddTransient<iMembershipTypesAppService, MembershipTypesAppService>();
             services.AddTransient<iMembersAppService, MembersAppService>();
+
             services.AddTransient<iMenuAppService, MenuAppService>();
+
             services.AddTransient<IRepository<int, Member>, MembersRespository>();
+            services.AddTransient<IRepository<int, EquipmentType>, Repository<int, EquipmentType>>();
+            services.AddTransient<IRepository<int, MembershipType>, MembershipTypesRepository>();
 
 
 

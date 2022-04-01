@@ -38,7 +38,12 @@ namespace GymManager.Core.Members
 
         public bool AllowNewsletter { get; set; }
 
-        public MembershipType MembershipType { get; set; }
+        public List<MembershipType> MembershipTypes { get; set; }
+
+        public Member()
+        {
+            MembershipTypes = new List<MembershipType>();
+        }
 
 
     }

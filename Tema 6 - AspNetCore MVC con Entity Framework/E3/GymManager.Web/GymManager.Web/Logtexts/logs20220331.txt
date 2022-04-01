@@ -1,0 +1,1171 @@
+2022-03-31 14:42:37.975 -06:00 [INF] Starting Web Host
+2022-03-31 14:43:12.228 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 14:43:19.211 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 14:43:19.378 -06:00 [INF] Hosting environment: Development
+2022-03-31 14:43:19.435 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 14:43:19.917 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 14:43:20.688 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 14:43:20.732 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 14:43:21.107 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 14:43:28.138 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 14:43:30.039 -06:00 [INF] Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 14:43:30.408 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 14:43:31.522 -06:00 [INF] Executed ViewResult - view Index executed in 1248.0431ms.
+2022-03-31 14:43:31.952 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 10830.1796ms
+2022-03-31 14:43:32.126 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 14:43:32.221 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 12326.3990ms
+2022-03-31 14:44:06.314 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 14:44:06.354 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 14:44:06.359 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 14:44:06.377 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 14:44:06.527 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 14:44:06.597 -06:00 [ERR] Failed executing DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 14:44:07.474 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'GymManager.DataAccess.GymManagerContext'.
+MySqlConnector.MySqlException (0x80004005): Unknown column 'm.MonthsDuration' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 888
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 50
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 135
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 444
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 319
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+MySqlConnector.MySqlException (0x80004005): Unknown column 'm.MonthsDuration' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 888
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 50
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 135
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 444
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 319
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-03-31 14:44:09.111 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 2722.542ms
+2022-03-31 14:44:09.124 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 14:44:09.140 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+MySqlConnector.MySqlException (0x80004005): Unknown column 'm.MonthsDuration' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 888
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 50
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 135
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 444
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 319
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at GymManager.ApplicationServices.Members.MembershipTypesAppService.GetMembershipsAsync() in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.ApplicationServices\Members\MembershipTypesAppService.cs:line 43
+   at GymManager.Web.Controllers.MembershipTypesController.Index() in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Controllers\MembershipTypesController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-31 14:44:09.864 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 500 - text/html;+charset=utf-8 3549.4473ms
+2022-03-31 14:47:00.584 -06:00 [INF] Starting Web Host
+2022-03-31 14:47:14.912 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 14:47:19.075 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 14:47:19.124 -06:00 [INF] Hosting environment: Development
+2022-03-31 14:47:19.135 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 14:47:19.254 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 14:47:19.779 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 14:47:19.797 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 14:47:20.256 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 14:47:26.546 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 14:47:29.067 -06:00 [INF] Executed DbCommand (225ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 14:47:29.420 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 14:47:30.571 -06:00 [INF] Executed ViewResult - view Index executed in 1262.8853ms.
+2022-03-31 14:47:31.072 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 10791.2873ms
+2022-03-31 14:47:31.234 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 14:47:31.335 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 12092.1921ms
+2022-03-31 14:47:40.291 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 14:47:40.321 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 14:47:40.331 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 14:47:40.349 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 14:47:40.504 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 14:47:40.592 -06:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 14:47:40.600 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 14:47:40.611 -06:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/MembershipTypes/Index.cshtml","/Views/Shared/Index.cshtml","/Pages/Shared/Index.cshtml"]
+2022-03-31 14:47:40.624 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 270.7551ms
+2022-03-31 14:47:40.635 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 14:47:40.662 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/MembershipTypes/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-31 14:47:41.237 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 500 - text/html;+charset=utf-8 946.4822ms
+2022-03-31 14:49:00.934 -06:00 [INF] Starting Web Host
+2022-03-31 14:49:08.795 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 14:49:13.497 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 14:49:13.504 -06:00 [INF] Hosting environment: Development
+2022-03-31 14:49:13.575 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 14:49:13.795 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 14:49:14.609 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 14:49:14.634 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 14:49:14.948 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 14:49:22.177 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 14:49:24.476 -06:00 [INF] Executed DbCommand (198ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 14:49:24.837 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 14:49:25.833 -06:00 [INF] Executed ViewResult - view Index executed in 1071.5244ms.
+2022-03-31 14:49:25.847 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 10889.8643ms
+2022-03-31 14:49:25.861 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 14:49:26.128 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 12338.8923ms
+2022-03-31 14:49:56.454 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 14:49:56.504 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 14:49:56.510 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 14:49:56.528 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 14:49:56.630 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 14:49:56.681 -06:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 14:49:56.746 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 14:49:56.869 -06:00 [INF] Executed ViewResult - view Index executed in 172.9892ms.
+2022-03-31 14:49:57.100 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 567.3508ms
+2022-03-31 14:49:57.298 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 14:49:57.349 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 894.9888ms
+2022-03-31 14:50:16.248 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/EquipmentTypes/ - -
+2022-03-31 14:50:16.280 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 14:50:16.284 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.EquipmentTypesController.Index (GymManager.Web)'
+2022-03-31 14:50:16.299 -06:00 [INF] Route matched with {action = "Index", controller = "EquipmentTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.EquipmentTypesController (GymManager.Web).
+2022-03-31 14:50:16.335 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 14:50:16.388 -06:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Brand`, `e`.`Cost`, `e`.`Name`, `e`.`Units`
+FROM `EquipmentTypes` AS `e`
+2022-03-31 14:50:16.595 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 14:50:16.661 -06:00 [INF] Executed ViewResult - view Index executed in 95.5798ms.
+2022-03-31 14:50:16.967 -06:00 [INF] Executed action GymManager.Web.Controllers.EquipmentTypesController.Index (GymManager.Web) in 658.7414ms
+2022-03-31 14:50:17.199 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.EquipmentTypesController.Index (GymManager.Web)'
+2022-03-31 14:50:17.237 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/EquipmentTypes/ - - - 200 - text/html;+charset=utf-8 987.9715ms
+2022-03-31 14:50:21.380 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 14:50:21.397 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 14:50:21.429 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 14:50:21.448 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 14:50:21.488 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 14:50:21.574 -06:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 14:50:21.580 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 14:50:21.597 -06:00 [INF] Executed ViewResult - view Index executed in 17.3018ms.
+2022-03-31 14:50:21.604 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 126.4879ms
+2022-03-31 14:50:21.629 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 14:50:21.647 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 266.8173ms
+2022-03-31 14:52:07.180 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Bootstrap/css/bootstrap.min.css.map - -
+2022-03-31 14:52:08.277 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Bootstrap/js/bootstrap.bundle.min.js.map - -
+2022-03-31 14:52:08.431 -06:00 [INF] Sending file. Request path: '/Bootstrap/css/bootstrap.min.css.map'. Physical path: 'C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\wwwroot\Bootstrap\css\bootstrap.min.css.map'
+2022-03-31 14:52:08.704 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Bootstrap/css/bootstrap.min.css.map - - - 200 451427 text/plain 1483.4744ms
+2022-03-31 14:52:09.097 -06:00 [INF] Sending file. Request path: '/Bootstrap/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\wwwroot\Bootstrap\js\bootstrap.bundle.min.js.map'
+2022-03-31 14:52:09.119 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Bootstrap/js/bootstrap.bundle.min.js.map - - - 200 331017 text/plain 842.0311ms
+2022-03-31 14:54:29.222 -06:00 [INF] Starting Web Host
+2022-03-31 16:08:44.502 -06:00 [INF] Starting Web Host
+2022-03-31 16:09:03.951 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 16:09:07.023 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 16:09:07.049 -06:00 [INF] Hosting environment: Development
+2022-03-31 16:09:07.113 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 16:09:07.508 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 16:09:07.899 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 16:09:07.922 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 16:09:08.226 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 16:09:13.558 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:09:15.321 -06:00 [INF] Executed DbCommand (360ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 16:09:15.586 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 16:09:16.462 -06:00 [INF] Executed ViewResult - view Index executed in 933.5326ms.
+2022-03-31 16:09:16.479 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 8204.0963ms
+2022-03-31 16:09:16.506 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 16:09:16.707 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 9210.9229ms
+2022-03-31 16:09:23.211 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Members/ - -
+2022-03-31 16:09:23.263 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 16:09:23.296 -06:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-03-31 16:09:23.343 -06:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2022-03-31 16:09:23.355 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Members/ - - - 302 - - 144.4078ms
+2022-03-31 16:09:23.374 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Account/LogIn?ReturnUrl=%2FMembers%2F - -
+2022-03-31 16:09:23.395 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 16:09:23.402 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.AccountController.Login (GymManager.Web)'
+2022-03-31 16:09:23.411 -06:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login() on controller GymManager.Web.Controllers.AccountController (GymManager.Web).
+2022-03-31 16:09:23.576 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:09:23.855 -06:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `AspNetUsers` AS `a`)
+2022-03-31 16:09:23.930 -06:00 [INF] Executing ViewResult, running view Login.
+2022-03-31 16:09:24.378 -06:00 [INF] Executed ViewResult - view Login executed in 491.9409ms.
+2022-03-31 16:09:24.395 -06:00 [INF] Executed action GymManager.Web.Controllers.AccountController.Login (GymManager.Web) in 971.227ms
+2022-03-31 16:09:24.407 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.AccountController.Login (GymManager.Web)'
+2022-03-31 16:09:24.435 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Account/LogIn?ReturnUrl=%2FMembers%2F - - - 200 - text/html;+charset=utf-8 1060.7611ms
+2022-03-31 16:09:49.071 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/Account/Login application/x-www-form-urlencoded 261
+2022-03-31 16:09:49.118 -06:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2022-03-31 16:09:49.128 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.AccountController.Login (GymManager.Web)'
+2022-03-31 16:09:49.210 -06:00 [INF] Route matched with {action = "Login", controller = "Account", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(GymManager.Web.Models.LoginModel) on controller GymManager.Web.Controllers.AccountController (GymManager.Web).
+2022-03-31 16:09:49.241 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:09:49.258 -06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `AspNetUsers` AS `a`)
+2022-03-31 16:09:49.708 -06:00 [INF] Executed DbCommand (72ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`ConcurrencyStamp`, `a`.`Email`, `a`.`EmailConfirmed`, `a`.`LockoutEnabled`, `a`.`LockoutEnd`, `a`.`NormalizedEmail`, `a`.`NormalizedUserName`, `a`.`PasswordHash`, `a`.`PhoneNumber`, `a`.`PhoneNumberConfirmed`, `a`.`SecurityStamp`, `a`.`TwoFactorEnabled`, `a`.`UserName`
+FROM `AspNetUsers` AS `a`
+WHERE `a`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1
+2022-03-31 16:09:50.801 -06:00 [INF] Executed DbCommand (50ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`ClaimType`, `a`.`ClaimValue`, `a`.`UserId`
+FROM `AspNetUserClaims` AS `a`
+WHERE `a`.`UserId` = @__user_Id_0
+2022-03-31 16:09:50.860 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2022-03-31 16:09:51.128 -06:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2022-03-31 16:09:51.369 -06:00 [INF] Executed action GymManager.Web.Controllers.AccountController.Login (GymManager.Web) in 2149.8788ms
+2022-03-31 16:09:51.430 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.AccountController.Login (GymManager.Web)'
+2022-03-31 16:09:51.482 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44335/Account/Login application/x-www-form-urlencoded 261 - 302 - - 2411.1100ms
+2022-03-31 16:09:51.505 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 16:09:51.538 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 16:09:51.550 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 16:09:51.570 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:09:51.637 -06:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 16:09:51.650 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 16:09:51.669 -06:00 [INF] Executed ViewResult - view Index executed in 19.209ms.
+2022-03-31 16:09:51.687 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 117.4449ms
+2022-03-31 16:09:51.710 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 16:09:52.178 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 672.4022ms
+2022-03-31 16:09:54.676 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Members/ - -
+2022-03-31 16:09:54.714 -06:00 [INF] Authorization was successful.
+2022-03-31 16:09:54.844 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembersController.Index (GymManager.Web)'
+2022-03-31 16:09:54.896 -06:00 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembersController (GymManager.Web).
+2022-03-31 16:09:54.912 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:09:54.948 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 16:09:55.001 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 16:09:55.067 -06:00 [INF] Executed ViewResult - view Index executed in 106.0435ms.
+2022-03-31 16:09:55.481 -06:00 [INF] Executed action GymManager.Web.Controllers.MembersController.Index (GymManager.Web) in 577.9166ms
+2022-03-31 16:09:55.719 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembersController.Index (GymManager.Web)'
+2022-03-31 16:09:55.729 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Members/ - - - 200 - text/html;+charset=utf-8 1052.5229ms
+2022-03-31 16:09:57.526 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Members/Create - -
+2022-03-31 16:09:57.562 -06:00 [INF] Authorization was successful.
+2022-03-31 16:09:57.581 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembersController.Create (GymManager.Web)'
+2022-03-31 16:09:57.601 -06:00 [INF] Route matched with {action = "Create", controller = "Members", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller GymManager.Web.Controllers.MembersController (GymManager.Web).
+2022-03-31 16:09:57.685 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 16:09:57.868 -06:00 [INF] Executed ViewResult - view Create executed in 237.428ms.
+2022-03-31 16:09:57.877 -06:00 [INF] Executed action GymManager.Web.Controllers.MembersController.Create (GymManager.Web) in 246.303ms
+2022-03-31 16:09:57.899 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembersController.Create (GymManager.Web)'
+2022-03-31 16:09:57.921 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Members/Create - - - 200 - text/html;+charset=utf-8 394.8604ms
+2022-03-31 16:09:58.274 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Views/Members/Create.js - -
+2022-03-31 16:09:58.524 -06:00 [INF] The file /Views/Members/Create.js was not modified
+2022-03-31 16:09:58.547 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Views/Members/Create.js - - - 304 - application/javascript 276.2109ms
+2022-03-31 16:10:12.650 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/Members/Create application/x-www-form-urlencoded 377
+2022-03-31 16:10:12.687 -06:00 [INF] Authorization was successful.
+2022-03-31 16:10:12.705 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembersController.Create (GymManager.Web)'
+2022-03-31 16:10:12.744 -06:00 [INF] Route matched with {action = "Create", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MemberViewModel) on controller GymManager.Web.Controllers.MembersController (GymManager.Web).
+2022-03-31 16:10:12.863 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:10:13.031 -06:00 [INF] Executed DbCommand (107ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Cities` AS `c`
+WHERE `c`.`Id` = @__p_0
+LIMIT 1
+2022-03-31 16:10:14.063 -06:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 20), @p5='?' (DbType = DateTime), @p6='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Members` (`AllowNewsletter`, `Birthday`, `CityId`, `Email`, `LastName`, `Membersince`, `Name`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `Members`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-03-31 16:10:14.203 -06:00 [INF] Executing RedirectResult, redirecting to /Members.
+2022-03-31 16:10:14.211 -06:00 [INF] Executed action GymManager.Web.Controllers.MembersController.Create (GymManager.Web) in 1450.6428ms
+2022-03-31 16:10:14.219 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembersController.Create (GymManager.Web)'
+2022-03-31 16:10:14.229 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44335/Members/Create application/x-www-form-urlencoded 377 - 302 - - 1579.3500ms
+2022-03-31 16:10:14.311 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Members - -
+2022-03-31 16:10:14.331 -06:00 [INF] Authorization was successful.
+2022-03-31 16:10:14.337 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembersController.Index (GymManager.Web)'
+2022-03-31 16:10:14.343 -06:00 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembersController (GymManager.Web).
+2022-03-31 16:10:14.348 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:10:14.366 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 16:10:14.388 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 16:10:14.406 -06:00 [INF] Executed ViewResult - view Index executed in 18.5764ms.
+2022-03-31 16:10:14.410 -06:00 [INF] Executed action GymManager.Web.Controllers.MembersController.Index (GymManager.Web) in 62.1403ms
+2022-03-31 16:10:14.426 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembersController.Index (GymManager.Web)'
+2022-03-31 16:10:14.906 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Members - - - 200 - text/html;+charset=utf-8 594.4953ms
+2022-03-31 16:10:20.745 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Members/Create - -
+2022-03-31 16:10:20.772 -06:00 [INF] Authorization was successful.
+2022-03-31 16:10:20.806 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembersController.Create (GymManager.Web)'
+2022-03-31 16:10:20.811 -06:00 [INF] Route matched with {action = "Create", controller = "Members", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller GymManager.Web.Controllers.MembersController (GymManager.Web).
+2022-03-31 16:10:20.818 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 16:10:20.828 -06:00 [INF] Executed ViewResult - view Create executed in 10.1006ms.
+2022-03-31 16:10:20.834 -06:00 [INF] Executed action GymManager.Web.Controllers.MembersController.Create (GymManager.Web) in 16.6956ms
+2022-03-31 16:10:20.856 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembersController.Create (GymManager.Web)'
+2022-03-31 16:10:20.871 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Members/Create - - - 200 - text/html;+charset=utf-8 125.7176ms
+2022-03-31 16:10:50.604 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/Members/Create application/x-www-form-urlencoded 356
+2022-03-31 16:10:50.615 -06:00 [INF] Authorization was successful.
+2022-03-31 16:10:50.619 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembersController.Create (GymManager.Web)'
+2022-03-31 16:10:50.629 -06:00 [INF] Route matched with {action = "Create", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MemberViewModel) on controller GymManager.Web.Controllers.MembersController (GymManager.Web).
+2022-03-31 16:10:50.636 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:10:50.686 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`Name`
+FROM `Cities` AS `c`
+WHERE `c`.`Id` = @__p_0
+LIMIT 1
+2022-03-31 16:10:50.716 -06:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 20), @p5='?' (DbType = DateTime), @p6='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Members` (`AllowNewsletter`, `Birthday`, `CityId`, `Email`, `LastName`, `Membersince`, `Name`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `Members`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-03-31 16:10:50.752 -06:00 [INF] Executing RedirectResult, redirecting to /Members.
+2022-03-31 16:10:50.756 -06:00 [INF] Executed action GymManager.Web.Controllers.MembersController.Create (GymManager.Web) in 121.5628ms
+2022-03-31 16:10:50.761 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembersController.Create (GymManager.Web)'
+2022-03-31 16:10:50.767 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44335/Members/Create application/x-www-form-urlencoded 356 - 302 - - 162.0765ms
+2022-03-31 16:10:50.794 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Members - -
+2022-03-31 16:10:50.818 -06:00 [INF] Authorization was successful.
+2022-03-31 16:10:50.835 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembersController.Index (GymManager.Web)'
+2022-03-31 16:10:50.849 -06:00 [INF] Route matched with {action = "Index", controller = "Members", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembersController (GymManager.Web).
+2022-03-31 16:10:50.855 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:10:50.878 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 16:10:50.884 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 16:10:50.897 -06:00 [INF] Executed ViewResult - view Index executed in 12.9776ms.
+2022-03-31 16:10:50.908 -06:00 [INF] Executed action GymManager.Web.Controllers.MembersController.Index (GymManager.Web) in 53.1067ms
+2022-03-31 16:10:50.921 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembersController.Index (GymManager.Web)'
+2022-03-31 16:10:50.937 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Members - - - 200 - text/html;+charset=utf-8 143.5664ms
+2022-03-31 16:11:00.402 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 16:11:00.423 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 16:11:00.491 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 16:11:00.511 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:11:00.566 -06:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 16:11:00.603 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 16:11:00.649 -06:00 [INF] Executed ViewResult - view Index executed in 75.9936ms.
+2022-03-31 16:11:00.697 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 193.7221ms
+2022-03-31 16:11:01.196 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 16:11:01.248 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 845.7284ms
+2022-03-31 16:11:07.043 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 16:11:07.065 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 16:11:07.077 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 16:11:07.090 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:11:07.112 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 16:11:07.168 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 16:11:07.346 -06:00 [INF] Executed ViewResult - view Create executed in 227.2331ms.
+2022-03-31 16:11:07.350 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 266.8156ms
+2022-03-31 16:11:07.361 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 16:11:07.387 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 344.4563ms
+2022-03-31 16:11:59.050 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 320
+2022-03-31 16:11:59.063 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 16:11:59.080 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MembershipTypesViewModel) on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 16:11:59.115 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:11:59.216 -06:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?' (Size = 45)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `MembershipTypes` (`Cost`, `MemberId`, `MonthsDuration`, `StartingDate`, `Type`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `MembershipTypes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-03-31 16:11:59.258 -06:00 [INF] Executing RedirectResult, redirecting to /MembershipTypes.
+2022-03-31 16:11:59.264 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 180.2768ms
+2022-03-31 16:11:59.269 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 16:11:59.278 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 320 - 302 - - 227.6478ms
+2022-03-31 16:11:59.297 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes - -
+2022-03-31 16:11:59.318 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 16:11:59.326 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 16:11:59.330 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 16:11:59.348 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 16:11:59.763 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'GymManager.DataAccess.GymManagerContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.DateTime'.
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 369
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method343(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.DateTime'.
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 369
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method343(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-03-31 16:12:00.787 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 1457.2337ms
+2022-03-31 16:12:00.795 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 16:12:00.802 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.DateTime'.
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 369
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method343(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at GymManager.ApplicationServices.Members.MembershipTypesAppService.GetMembershipsAsync() in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.ApplicationServices\Members\MembershipTypesAppService.cs:line 43
+   at GymManager.Web.Controllers.MembershipTypesController.Index() in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Controllers\MembershipTypesController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-31 16:12:01.316 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes - - - 500 - text/html;+charset=utf-8 2018.2027ms
+2022-03-31 17:41:26.854 -06:00 [INF] Starting Web Host
+2022-03-31 17:41:41.001 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 17:41:45.443 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 17:41:45.569 -06:00 [INF] Hosting environment: Development
+2022-03-31 17:41:45.639 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 17:41:45.756 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 17:41:46.096 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 17:41:46.255 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 17:41:50.762 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 17:41:52.080 -06:00 [INF] Executed DbCommand (144ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 17:41:52.634 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 17:41:53.662 -06:00 [INF] Executed ViewResult - view Index executed in 1134.8241ms.
+2022-03-31 17:41:53.685 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 7408.7983ms
+2022-03-31 17:41:53.968 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 17:41:54.021 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 8268.2585ms
+2022-03-31 17:41:54.393 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/favicon.ico - -
+2022-03-31 17:41:54.422 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/favicon.ico - - - 404 - - 29.2592ms
+2022-03-31 17:42:05.993 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 17:42:06.016 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 17:42:06.034 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 17:42:06.144 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 17:42:06.254 -06:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 17:42:06.814 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'GymManager.DataAccess.GymManagerContext'.
+System.InvalidCastException: Unable to convert MySQL date/time to System.DateTime, set AllowZeroDateTime=True or ConvertZeroDateTime=True in the connection string. See https://mysqlconnector.net/connection-options/
+   at MySqlConnector.Core.Row.ParseDateTime(ReadOnlySpan`1 value) in /_/src/MySqlConnector/Core/Row.cs:line 496
+   at MySqlConnector.Core.TextRow.GetValueCore(ReadOnlySpan`1 data, ColumnDefinitionPayload columnDefinition) in /_/src/MySqlConnector/Core/TextRow.cs:line 91
+   at MySqlConnector.Core.Row.GetValue(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 39
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 356
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method115(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to convert MySQL date/time to System.DateTime, set AllowZeroDateTime=True or ConvertZeroDateTime=True in the connection string. See https://mysqlconnector.net/connection-options/
+   at MySqlConnector.Core.Row.ParseDateTime(ReadOnlySpan`1 value) in /_/src/MySqlConnector/Core/Row.cs:line 496
+   at MySqlConnector.Core.TextRow.GetValueCore(ReadOnlySpan`1 data, ColumnDefinitionPayload columnDefinition) in /_/src/MySqlConnector/Core/TextRow.cs:line 91
+   at MySqlConnector.Core.Row.GetValue(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 39
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 356
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method115(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-03-31 17:42:07.207 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 1140.7979ms
+2022-03-31 17:42:07.211 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 17:42:07.225 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to convert MySQL date/time to System.DateTime, set AllowZeroDateTime=True or ConvertZeroDateTime=True in the connection string. See https://mysqlconnector.net/connection-options/
+   at MySqlConnector.Core.Row.ParseDateTime(ReadOnlySpan`1 value) in /_/src/MySqlConnector/Core/Row.cs:line 496
+   at MySqlConnector.Core.TextRow.GetValueCore(ReadOnlySpan`1 data, ColumnDefinitionPayload columnDefinition) in /_/src/MySqlConnector/Core/TextRow.cs:line 91
+   at MySqlConnector.Core.Row.GetValue(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 39
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 356
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method115(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at GymManager.ApplicationServices.Members.MembershipTypesAppService.GetMembershipsAsync() in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.ApplicationServices\Members\MembershipTypesAppService.cs:line 43
+   at GymManager.Web.Controllers.MembershipTypesController.Index() in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Controllers\MembershipTypesController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-31 17:42:07.486 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 500 - text/html;+charset=utf-8 1492.4925ms
+2022-03-31 17:43:36.022 -06:00 [INF] Starting Web Host
+2022-03-31 17:43:46.979 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 17:43:48.528 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 17:43:48.532 -06:00 [INF] Hosting environment: Development
+2022-03-31 17:43:48.549 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 17:43:48.679 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 17:43:48.913 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 17:43:49.171 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 17:43:52.624 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 17:43:53.601 -06:00 [INF] Executed DbCommand (150ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 17:43:54.123 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 17:43:54.823 -06:00 [INF] Executed ViewResult - view Index executed in 760.6248ms.
+2022-03-31 17:43:54.842 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 5665.8947ms
+2022-03-31 17:43:54.964 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 17:43:55.226 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 6569.7846ms
+2022-03-31 17:44:16.484 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 17:44:16.505 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 17:44:16.523 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 17:44:16.601 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 17:44:16.639 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 17:44:16.791 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'GymManager.DataAccess.GymManagerContext'.
+System.InvalidCastException: Unable to convert MySQL date/time to System.DateTime, set AllowZeroDateTime=True or ConvertZeroDateTime=True in the connection string. See https://mysqlconnector.net/connection-options/
+   at MySqlConnector.Core.Row.ParseDateTime(ReadOnlySpan`1 value) in /_/src/MySqlConnector/Core/Row.cs:line 496
+   at MySqlConnector.Core.TextRow.GetValueCore(ReadOnlySpan`1 data, ColumnDefinitionPayload columnDefinition) in /_/src/MySqlConnector/Core/TextRow.cs:line 91
+   at MySqlConnector.Core.Row.GetValue(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 39
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 356
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method115(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to convert MySQL date/time to System.DateTime, set AllowZeroDateTime=True or ConvertZeroDateTime=True in the connection string. See https://mysqlconnector.net/connection-options/
+   at MySqlConnector.Core.Row.ParseDateTime(ReadOnlySpan`1 value) in /_/src/MySqlConnector/Core/Row.cs:line 496
+   at MySqlConnector.Core.TextRow.GetValueCore(ReadOnlySpan`1 data, ColumnDefinitionPayload columnDefinition) in /_/src/MySqlConnector/Core/TextRow.cs:line 91
+   at MySqlConnector.Core.Row.GetValue(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 39
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 356
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method115(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-03-31 17:44:17.434 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 901.5674ms
+2022-03-31 17:44:17.438 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 17:44:17.450 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to convert MySQL date/time to System.DateTime, set AllowZeroDateTime=True or ConvertZeroDateTime=True in the connection string. See https://mysqlconnector.net/connection-options/
+   at MySqlConnector.Core.Row.ParseDateTime(ReadOnlySpan`1 value) in /_/src/MySqlConnector/Core/Row.cs:line 496
+   at MySqlConnector.Core.TextRow.GetValueCore(ReadOnlySpan`1 data, ColumnDefinitionPayload columnDefinition) in /_/src/MySqlConnector/Core/TextRow.cs:line 91
+   at MySqlConnector.Core.Row.GetValue(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 39
+   at MySqlConnector.Core.Row.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 356
+   at MySqlConnector.MySqlDataReader.GetDateTime(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 261
+   at lambda_method115(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at GymManager.ApplicationServices.Members.MembershipTypesAppService.GetMembershipsAsync() in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.ApplicationServices\Members\MembershipTypesAppService.cs:line 43
+   at GymManager.Web.Controllers.MembershipTypesController.Index() in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Controllers\MembershipTypesController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-31 17:44:17.606 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 500 - text/html;+charset=utf-8 1122.0854ms
+2022-03-31 18:03:06.194 -06:00 [INF] Starting Web Host
+2022-03-31 18:03:12.978 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 18:03:14.657 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 18:03:14.662 -06:00 [INF] Hosting environment: Development
+2022-03-31 18:03:14.692 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 18:03:14.800 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 18:03:15.231 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 18:03:15.682 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 18:03:19.949 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 18:03:21.098 -06:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 18:03:21.565 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 18:03:22.374 -06:00 [INF] Executed ViewResult - view Index executed in 864.1232ms.
+2022-03-31 18:03:22.742 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 7044.8488ms
+2022-03-31 18:03:22.794 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 18:03:22.862 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 8080.0456ms
+2022-03-31 18:03:31.529 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 18:03:31.547 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 18:03:31.562 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 18:03:31.643 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 18:03:31.706 -06:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 18:03:31.741 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 18:03:31.788 -06:00 [INF] Executed ViewResult - view Index executed in 77.1689ms.
+2022-03-31 18:03:31.791 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 221.1455ms
+2022-03-31 18:03:31.803 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 18:03:31.812 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 283.1286ms
+2022-03-31 18:03:34.180 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 18:03:34.236 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 18:03:34.249 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 18:03:34.280 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 18:03:34.303 -06:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 18:03:34.349 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 18:03:34.589 -06:00 [INF] Executed ViewResult - view Create executed in 269.7047ms.
+2022-03-31 18:03:34.826 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 570.7634ms
+2022-03-31 18:03:35.091 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 18:03:35.091 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Views/MembershipTypes/Create.js - -
+2022-03-31 18:03:35.119 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 938.7245ms
+2022-03-31 18:03:35.241 -06:00 [INF] Sending file. Request path: '/Views/MembershipTypes/Create.js'. Physical path: 'C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\wwwroot\Views\MembershipTypes\Create.js'
+2022-03-31 18:03:35.265 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Views/MembershipTypes/Create.js - - - 200 119 application/javascript 173.1286ms
+2022-03-31 18:05:43.245 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 275
+2022-03-31 18:05:43.276 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 18:05:43.337 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MembershipTypesViewModel) on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 18:05:43.440 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 18:05:44.210 -06:00 [INF] Executed DbCommand (116ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?' (Size = 45)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `MembershipTypes` (`Cost`, `MemberId`, `MonthsDuration`, `StartingDate`, `Type`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `MembershipTypes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-03-31 18:05:44.379 -06:00 [INF] Executing RedirectResult, redirecting to /MembershipTypes.
+2022-03-31 18:05:44.393 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 1054.2222ms
+2022-03-31 18:05:44.407 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 18:05:44.421 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 275 - 302 - - 1182.0759ms
+2022-03-31 18:05:44.439 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes - -
+2022-03-31 18:05:44.445 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 18:05:44.453 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 18:05:44.461 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 18:05:44.477 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 18:05:44.506 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:22:47.794 -06:00 [INF] Starting Web Host
+2022-03-31 21:23:10.362 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 21:23:15.939 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 21:23:16.003 -06:00 [INF] Hosting environment: Development
+2022-03-31 21:23:16.106 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 21:23:16.305 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 21:23:16.591 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:23:16.959 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 21:23:22.791 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:23:24.634 -06:00 [INF] Executed DbCommand (400ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:23:25.399 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:23:26.632 -06:00 [INF] Executed ViewResult - view Index executed in 1394.2164ms.
+2022-03-31 21:23:26.646 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 9674.9031ms
+2022-03-31 21:23:27.122 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:23:27.527 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 11234.6276ms
+2022-03-31 21:23:27.875 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/favicon.ico - -
+2022-03-31 21:23:28.046 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/favicon.ico - - - 404 - - 170.7315ms
+2022-03-31 21:23:34.097 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 21:23:34.169 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:23:34.228 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:23:34.328 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:23:34.468 -06:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 21:23:34.867 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:23:35.084 -06:00 [INF] Executed ViewResult - view Index executed in 285.2369ms.
+2022-03-31 21:23:35.092 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 845.0478ms
+2022-03-31 21:23:35.113 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:23:35.137 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 1040.3167ms
+2022-03-31 21:23:46.988 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 21:23:47.131 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:23:47.148 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:23:47.182 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:23:47.217 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:23:47.266 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 21:24:39.622 -06:00 [INF] Executed ViewResult - view Create executed in 52393.3197ms.
+2022-03-31 21:24:40.086 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 52933.8357ms
+2022-03-31 21:24:40.150 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:24:40.171 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 53182.8779ms
+2022-03-31 21:25:39.655 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 277
+2022-03-31 21:25:39.676 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:25:39.747 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MembershipTypesViewModel) on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:25:39.859 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:25:40.932 -06:00 [ERR] Failed executing DbCommand (76ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?' (Size = 45)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `MembershipTypes` (`Cost`, `MemberId`, `MonthsDuration`, `StartingDate`, `Type`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `MembershipTypes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-03-31 21:25:41.790 -06:00 [ERR] An exception occurred in the database while saving changes for context type 'GymManager.DataAccess.GymManagerContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`gymmanageref`.`membershiptypes`, CONSTRAINT `FK_MembershipTypes_Members_MemberId` FOREIGN KEY (`MemberId`) REFERENCES `members` (`Id`))
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 888
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 50
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 135
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 444
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 319
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`gymmanageref`.`membershiptypes`, CONSTRAINT `FK_MembershipTypes_Members_MemberId` FOREIGN KEY (`MemberId`) REFERENCES `members` (`Id`))
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 888
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 50
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 135
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 444
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 319
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-03-31 21:25:42.991 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 3240.5828ms
+2022-03-31 21:25:43.004 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:25:43.021 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: entity could not be saved: An error occurred while updating the entries. See the inner exception for details.
+   at GymManager.DataAccess.Repositories.Repository`2.AddAsync(TEntity entity) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\Repositories\Repository.cs:line 34
+   at GymManager.ApplicationServices.Members.MembershipTypesAppService.AddMembershipAsync(MembershipType membership) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.ApplicationServices\Members\MembershipTypesAppService.cs:line 22
+   at GymManager.Web.Controllers.MembershipTypesController.Create(MembershipTypesViewModel viewModel) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Controllers\MembershipTypesController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-31 21:25:43.456 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 277 - 500 - text/html;+charset=utf-8 3801.4005ms
+2022-03-31 21:31:36.777 -06:00 [INF] Starting Web Host
+2022-03-31 21:31:42.231 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 21:31:44.057 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 21:31:44.083 -06:00 [INF] Hosting environment: Development
+2022-03-31 21:31:44.118 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 21:31:44.269 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 21:31:44.583 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:31:44.825 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 21:31:49.186 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:31:50.892 -06:00 [INF] Executed DbCommand (183ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:31:51.631 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:31:52.633 -06:00 [INF] Executed ViewResult - view Index executed in 1085.9814ms.
+2022-03-31 21:31:52.875 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 8041.1368ms
+2022-03-31 21:31:52.947 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:31:53.140 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 8880.9934ms
+2022-03-31 21:31:59.728 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 21:31:59.757 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:31:59.783 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:31:59.868 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:31:59.937 -06:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`
+FROM `MembershipTypes` AS `m`
+2022-03-31 21:32:00.106 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:32:00.159 -06:00 [INF] Executed ViewResult - view Index executed in 75.5184ms.
+2022-03-31 21:32:00.163 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 369.3606ms
+2022-03-31 21:32:00.184 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:32:00.339 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 611.0093ms
+2022-03-31 21:32:04.035 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 21:32:04.063 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:32:04.076 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:32:04.105 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:32:04.123 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:32:04.145 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 21:32:04.404 -06:00 [INF] Executed ViewResult - view Create executed in 265.2547ms.
+2022-03-31 21:32:04.929 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 847.8332ms
+2022-03-31 21:32:05.105 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:32:05.234 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 1198.9492ms
+2022-03-31 21:32:43.820 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 275
+2022-03-31 21:32:43.839 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:32:43.902 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MembershipTypesViewModel) on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:32:44.057 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:32:45.011 -06:00 [ERR] Failed executing DbCommand (111ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?' (Size = 45)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `MembershipTypes` (`Cost`, `MemberId`, `MonthsDuration`, `StartingDate`, `Type`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `MembershipTypes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-03-31 21:32:45.357 -06:00 [ERR] An exception occurred in the database while saving changes for context type 'GymManager.DataAccess.GymManagerContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`gymmanageref`.`membershiptypes`, CONSTRAINT `FK_MembershipTypes_Members_MemberId` FOREIGN KEY (`MemberId`) REFERENCES `members` (`Id`) ON DELETE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 888
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 50
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 135
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 444
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 319
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`gymmanageref`.`membershiptypes`, CONSTRAINT `FK_MembershipTypes_Members_MemberId` FOREIGN KEY (`MemberId`) REFERENCES `members` (`Id`) ON DELETE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 888
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 50
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 135
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 444
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 319
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 312
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-03-31 21:32:46.609 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 2704.4168ms
+2022-03-31 21:32:46.617 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:32:46.629 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: entity could not be saved: An error occurred while updating the entries. See the inner exception for details.
+   at GymManager.DataAccess.Repositories.Repository`2.AddAsync(TEntity entity) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\Repositories\Repository.cs:line 34
+   at GymManager.ApplicationServices.Members.MembershipTypesAppService.AddMembershipAsync(MembershipType membership) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.ApplicationServices\Members\MembershipTypesAppService.cs:line 22
+   at GymManager.Web.Controllers.MembershipTypesController.Create(MembershipTypesViewModel viewModel) in C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web\Controllers\MembershipTypesController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-31 21:32:46.777 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 275 - 500 - text/html;+charset=utf-8 2959.0607ms
+2022-03-31 21:35:25.539 -06:00 [INF] Starting Web Host
+2022-03-31 21:35:36.694 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 21:35:38.959 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 21:35:38.965 -06:00 [INF] Hosting environment: Development
+2022-03-31 21:35:38.978 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 21:35:39.085 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 21:35:39.446 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:35:39.687 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 21:35:44.421 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:35:45.645 -06:00 [INF] Executed DbCommand (160ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:35:46.219 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:35:47.134 -06:00 [INF] Executed ViewResult - view Index executed in 975.7651ms.
+2022-03-31 21:35:47.158 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 7460.7993ms
+2022-03-31 21:35:47.305 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:35:47.737 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 8671.9685ms
+2022-03-31 21:35:59.650 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 21:35:59.669 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:35:59.689 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:35:59.804 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:36:00.606 -06:00 [INF] Executed DbCommand (223ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`, `m0`.`Id`, `m0`.`AllowNewsletter`, `m0`.`Birthday`, `m0`.`CityId`, `m0`.`Email`, `m0`.`LastName`, `m0`.`Membersince`, `m0`.`Name`
+FROM `MembershipTypes` AS `m`
+INNER JOIN `Members` AS `m0` ON `m`.`MemberId` = `m0`.`Id`
+2022-03-31 21:36:00.629 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:36:00.686 -06:00 [INF] Executed ViewResult - view Index executed in 66.772ms.
+2022-03-31 21:36:00.935 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 1234.5874ms
+2022-03-31 21:36:01.190 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:36:01.214 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 1571.5922ms
+2022-03-31 21:36:04.624 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 21:36:04.683 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:36:04.747 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:36:04.837 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:36:04.950 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:36:05.038 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 21:36:05.279 -06:00 [INF] Executed ViewResult - view Create executed in 248.1021ms.
+2022-03-31 21:36:05.751 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 996.1194ms
+2022-03-31 21:36:05.867 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:36:05.881 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 1257.2124ms
+2022-03-31 21:38:39.279 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 275
+2022-03-31 21:38:39.299 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:38:39.391 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MembershipTypesViewModel) on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:46:24.165 -06:00 [INF] Starting Web Host
+2022-03-31 21:46:34.311 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 21:46:37.333 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 21:46:37.394 -06:00 [INF] Hosting environment: Development
+2022-03-31 21:46:37.401 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 21:46:37.645 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 21:46:37.917 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:46:38.269 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 21:46:43.232 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:46:44.814 -06:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:46:45.629 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:46:46.729 -06:00 [INF] Executed ViewResult - view Index executed in 1224.5336ms.
+2022-03-31 21:46:46.759 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 8412.5319ms
+2022-03-31 21:46:46.782 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:46:47.284 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 9651.4837ms
+2022-03-31 21:46:56.245 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 21:46:56.302 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:46:56.322 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:46:56.443 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:46:57.030 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`, `m0`.`Id`, `m0`.`AllowNewsletter`, `m0`.`Birthday`, `m0`.`CityId`, `m0`.`Email`, `m0`.`LastName`, `m0`.`Membersince`, `m0`.`Name`
+FROM `MembershipTypes` AS `m`
+INNER JOIN `Members` AS `m0` ON `m`.`MemberId` = `m0`.`Id`
+2022-03-31 21:46:57.056 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:46:57.108 -06:00 [INF] Executed ViewResult - view Index executed in 66.8814ms.
+2022-03-31 21:46:57.296 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 968.495ms
+2022-03-31 21:46:57.343 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:46:57.424 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 1178.6434ms
+2022-03-31 21:46:58.892 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 21:46:58.918 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:46:58.937 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:46:58.973 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:46:59.014 -06:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:46:59.030 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 21:46:59.278 -06:00 [INF] Executed ViewResult - view Create executed in 251.6923ms.
+2022-03-31 21:46:59.281 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 340.0418ms
+2022-03-31 21:46:59.301 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:46:59.739 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 847.0472ms
+2022-03-31 21:48:11.851 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 275
+2022-03-31 21:48:11.876 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:48:11.943 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MembershipTypesViewModel) on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:54:39.079 -06:00 [INF] Starting Web Host
+2022-03-31 21:54:47.624 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 21:54:50.796 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 21:54:50.803 -06:00 [INF] Hosting environment: Development
+2022-03-31 21:54:50.832 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 21:54:50.966 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 21:54:51.384 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:54:51.661 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 21:54:56.834 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:54:58.352 -06:00 [INF] Executed DbCommand (212ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:54:58.995 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:54:59.695 -06:00 [INF] Executed ViewResult - view Index executed in 843.0068ms.
+2022-03-31 21:54:59.875 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 8194.8745ms
+2022-03-31 21:55:00.181 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:55:00.252 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 9284.7754ms
+2022-03-31 21:55:36.172 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 21:55:36.223 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:55:36.245 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:55:36.402 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:55:36.997 -06:00 [INF] Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`, `m0`.`Id`, `m0`.`AllowNewsletter`, `m0`.`Birthday`, `m0`.`CityId`, `m0`.`Email`, `m0`.`LastName`, `m0`.`Membersince`, `m0`.`Name`
+FROM `MembershipTypes` AS `m`
+INNER JOIN `Members` AS `m0` ON `m`.`MemberId` = `m0`.`Id`
+2022-03-31 21:55:37.024 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:55:37.081 -06:00 [INF] Executed ViewResult - view Index executed in 63.7107ms.
+2022-03-31 21:55:37.251 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 981.6007ms
+2022-03-31 21:55:37.335 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 21:55:37.353 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 1182.7912ms
+2022-03-31 21:55:41.371 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 21:55:41.405 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:55:41.431 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:55:41.471 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:55:41.489 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:55:41.529 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 21:55:41.847 -06:00 [INF] Executed ViewResult - view Create executed in 345.63ms.
+2022-03-31 21:55:41.850 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 406.7321ms
+2022-03-31 21:55:42.443 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:55:42.597 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 1226.8262ms
+2022-03-31 21:56:06.481 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 275
+2022-03-31 21:56:06.511 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 21:56:06.574 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MembershipTypesViewModel) on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 21:58:25.791 -06:00 [INF] Starting Web Host
+2022-03-31 21:58:36.192 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 21:58:38.995 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 21:58:39.035 -06:00 [INF] Hosting environment: Development
+2022-03-31 21:58:39.257 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 21:58:39.809 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 21:58:40.092 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:58:40.496 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 21:58:46.040 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 21:58:47.792 -06:00 [INF] Executed DbCommand (198ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 21:58:48.971 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 21:58:50.362 -06:00 [INF] Executed ViewResult - view Index executed in 1593.878ms.
+2022-03-31 21:58:50.408 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 9902.6056ms
+2022-03-31 21:58:50.451 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 21:58:50.778 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 10981.8003ms
+2022-03-31 22:00:48.306 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 22:00:48.344 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 22:00:48.363 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 22:00:48.512 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 22:00:49.289 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`, `m0`.`Id`, `m0`.`AllowNewsletter`, `m0`.`Birthday`, `m0`.`CityId`, `m0`.`Email`, `m0`.`LastName`, `m0`.`Membersince`, `m0`.`Name`
+FROM `MembershipTypes` AS `m`
+INNER JOIN `Members` AS `m0` ON `m`.`MemberId` = `m0`.`Id`
+2022-03-31 22:00:49.338 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 22:00:49.466 -06:00 [INF] Executed ViewResult - view Index executed in 166.2816ms.
+2022-03-31 22:00:49.686 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 1316.0382ms
+2022-03-31 22:00:50.081 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 22:00:50.265 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 1959.2307ms
+2022-03-31 22:00:53.405 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 22:00:53.436 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 22:00:53.453 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 22:00:53.482 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 22:00:53.548 -06:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 22:00:53.569 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 22:02:22.627 -06:00 [INF] Starting Web Host
+2022-03-31 22:02:33.437 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 22:02:35.871 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 22:02:35.889 -06:00 [INF] Hosting environment: Development
+2022-03-31 22:02:35.895 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 22:02:36.093 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 22:02:36.739 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 22:02:37.042 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 22:02:41.987 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 22:02:43.470 -06:00 [INF] Executed DbCommand (232ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 22:02:44.337 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 22:02:45.337 -06:00 [INF] Executed ViewResult - view Index executed in 1101.1492ms.
+2022-03-31 22:02:45.669 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 8614.8405ms
+2022-03-31 22:02:45.693 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 22:02:45.769 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 9684.5608ms
+2022-03-31 22:03:30.775 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 22:03:30.838 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 22:03:30.855 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 22:03:30.942 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 22:03:31.402 -06:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`, `m0`.`Id`, `m0`.`AllowNewsletter`, `m0`.`Birthday`, `m0`.`CityId`, `m0`.`Email`, `m0`.`LastName`, `m0`.`Membersince`, `m0`.`Name`
+FROM `MembershipTypes` AS `m`
+INNER JOIN `Members` AS `m0` ON `m`.`MemberId` = `m0`.`Id`
+2022-03-31 22:03:31.415 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 22:03:31.484 -06:00 [INF] Executed ViewResult - view Index executed in 76.3684ms.
+2022-03-31 22:03:31.491 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 631.9996ms
+2022-03-31 22:03:31.610 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 22:03:31.736 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 959.9336ms
+2022-03-31 22:03:34.205 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 22:03:34.226 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 22:03:34.266 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 22:03:34.298 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 22:03:34.356 -06:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 22:03:34.392 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 22:05:20.924 -06:00 [INF] Executed ViewResult - view Create executed in 106555.6222ms.
+2022-03-31 22:05:20.955 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 106683.8442ms
+2022-03-31 22:05:21.231 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 22:05:21.380 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 107174.9467ms
+2022-03-31 22:33:04.017 -06:00 [INF] Starting Web Host
+2022-03-31 22:33:13.015 -06:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-03-31 22:33:14.984 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-03-31 22:33:14.992 -06:00 [INF] Hosting environment: Development
+2022-03-31 22:33:15.033 -06:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Web
+2022-03-31 22:33:15.161 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-03-31 22:33:15.432 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 22:33:15.797 -06:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-03-31 22:33:19.927 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 22:33:20.952 -06:00 [INF] Executed DbCommand (197ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 22:33:21.488 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 22:33:22.289 -06:00 [INF] Executed ViewResult - view Index executed in 816.0592ms.
+2022-03-31 22:33:22.505 -06:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 6686.8186ms
+2022-03-31 22:33:22.672 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-03-31 22:33:22.761 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 7610.2304ms
+2022-03-31 22:33:56.895 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/ - -
+2022-03-31 22:33:56.915 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 22:33:56.930 -06:00 [INF] Route matched with {action = "Index", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 22:33:57.022 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 22:33:57.621 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Cost`, `m`.`MemberId`, `m`.`MonthsDuration`, `m`.`StartingDate`, `m`.`Type`, `m0`.`Id`, `m0`.`AllowNewsletter`, `m0`.`Birthday`, `m0`.`CityId`, `m0`.`Email`, `m0`.`LastName`, `m0`.`Membersince`, `m0`.`Name`
+FROM `MembershipTypes` AS `m`
+INNER JOIN `Members` AS `m0` ON `m`.`MemberId` = `m0`.`Id`
+2022-03-31 22:33:57.647 -06:00 [INF] Executing ViewResult, running view Index.
+2022-03-31 22:33:57.686 -06:00 [INF] Executed ViewResult - view Index executed in 56.7843ms.
+2022-03-31 22:33:57.694 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web) in 760.9888ms
+2022-03-31 22:33:57.702 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Index (GymManager.Web)'
+2022-03-31 22:33:57.718 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/ - - - 200 - text/html;+charset=utf-8 823.5067ms
+2022-03-31 22:33:59.927 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44335/MembershipTypes/Create - -
+2022-03-31 22:33:59.969 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 22:34:00.004 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
+2022-03-31 22:34:00.067 -06:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-03-31 22:34:00.126 -06:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-03-31 22:34:00.138 -06:00 [INF] Executing ViewResult, running view Create.
+2022-03-31 22:34:09.723 -06:00 [INF] Executed ViewResult - view Create executed in 9590.3883ms.
+2022-03-31 22:34:09.755 -06:00 [INF] Executed action GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web) in 9711.5406ms
+2022-03-31 22:34:10.075 -06:00 [INF] Executed endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 22:34:10.081 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44335/MembershipTypes/Create - - - 200 - text/html;+charset=utf-8 10155.3239ms
+2022-03-31 22:34:39.624 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44335/MembershipTypes/Create application/x-www-form-urlencoded 275
+2022-03-31 22:34:39.640 -06:00 [INF] Executing endpoint 'GymManager.Web.Controllers.MembershipTypesController.Create (GymManager.Web)'
+2022-03-31 22:34:39.708 -06:00 [INF] Route matched with {action = "Create", controller = "MembershipTypes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(GymManager.Web.Models.MembershipTypesViewModel) on controller GymManager.Web.Controllers.MembershipTypesController (GymManager.Web).
