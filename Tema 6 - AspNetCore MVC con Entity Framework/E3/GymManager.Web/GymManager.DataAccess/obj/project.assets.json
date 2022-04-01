@@ -4425,19 +4425,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nath\\.nuget\\packages\\": {}
+    "C:\\Users\\CHON\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\GymManager.DataAccess.csproj",
+      "projectUniqueName": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\GymManager.DataAccess.csproj",
       "projectName": "GymManager.DataAccess",
-      "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\GymManager.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Nath\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\obj\\",
+      "projectPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\GymManager.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\CHON\\.nuget\\packages\\",
+      "outputPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CHON\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4451,8 +4451,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj": {
-              "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj"
+            "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj": {
+              "projectPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj"
             }
           }
         }
@@ -4501,7 +4501,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

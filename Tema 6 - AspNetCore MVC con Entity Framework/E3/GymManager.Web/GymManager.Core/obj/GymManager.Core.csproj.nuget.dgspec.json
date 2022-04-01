@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj": {}
+    "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj": {
+    "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj",
+        "projectUniqueName": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj",
         "projectName": "GymManager.Core",
-        "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj",
-        "packagesPath": "C:\\Users\\Nath\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\obj\\",
+        "projectPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj",
+        "packagesPath": "C:\\Users\\CHON\\.nuget\\packages\\",
+        "outputPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CHON\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

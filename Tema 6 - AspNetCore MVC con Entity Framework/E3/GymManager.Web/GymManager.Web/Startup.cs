@@ -45,9 +45,13 @@ namespace GymManager.Web
 
             string connectionString = Configuration.GetConnectionString("Default");
 
-
+            /*
             services.AddDbContext<GymManagerContext>(options => 
             options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            */
+
+            services.AddDbContext<GymManagerContext>(options =>
+                options.UseInMemoryDatabase(databaseName: "gymmanageref"));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             .AddEntityFrameworkStores<GymManagerContext>();

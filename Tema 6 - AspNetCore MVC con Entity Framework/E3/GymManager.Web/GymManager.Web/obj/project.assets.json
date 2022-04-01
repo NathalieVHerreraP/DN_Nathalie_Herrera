@@ -640,11 +640,11 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/5.0.11": {
+      "Microsoft.EntityFrameworkCore/5.0.15": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.11",
-          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.11",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.15",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.15",
           "Microsoft.Extensions.Caching.Memory": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -659,7 +659,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/5.0.11": {
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.15": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -668,7 +668,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.11": {
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.15": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -692,6 +692,18 @@
         },
         "build": {
           "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/5.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.15"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/5.0.11": {
@@ -2598,45 +2610,45 @@
         "version.txt"
       ]
     },
-    "Microsoft.EntityFrameworkCore/5.0.11": {
-      "sha512": "2DQJvH6NRPRKPOR6ZaJe2pDn0bSpQZSzHk+7QatFo06KfvP3Tixy5DAOviXkP6963FEQMuVDSvZef1amORBnaw==",
+    "Microsoft.EntityFrameworkCore/5.0.15": {
+      "sha512": "ThCWW0PV3EgUtgOsSHyNsOdJCzMTAPLDf31CHV0YG3NA45vRNJYyas9JVwmQbNg3ZaFR5UOJd4XlaKBcHs10ZA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/5.0.11",
+      "path": "microsoft.entityframeworkcore/5.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.5.0.15.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/5.0.11": {
-      "sha512": "Ut1BeIwAavUncIChZ0jM7qdqVsnLI1i2eCn/7rdqpVW/JldPFMQzlCMBtiq7dGuVMSniDNUnc93olYtttyD/Fg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.15": {
+      "sha512": "dI4246ydDdlwgZJ/9XD+VN2NpnIN118hrupp5TS+vStPmHZrCEo5YLjn9yfch7uta4MtBrVdVDBq6dBNBFWD5w==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/5.0.11",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.5.0.15.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.11": {
-      "sha512": "6vCGQY0H667qkV5fGuhHzWPveF0dpEwEs9xQyDgamwxkIN7LrPHQGp2eOXj6xVF+i8noTLtTR4sNMizKSnI2JA==",
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.15": {
+      "sha512": "QfJBhr49Jmvt+zJf1VPSBPq2ZPY5PlpiDSF3UFV37joyKiWMDyEsNTHd3RLFzagC4k8cmSKTgk+7Y49XwDvPJQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.11",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.5.0.15.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -2653,6 +2665,20 @@
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.5.0.11.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/5.0.15": {
+      "sha512": "G0M1/0ejm6RuHqRywt9bgBdOn0czWmSJBLpNyRtw0KDtBPDEVSNmXSM1a60b0r14Fd/uaPWkWFVPaHngslAiwg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/5.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.5.0.15.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.11": {
@@ -5573,25 +5599,26 @@
       "Microsoft.AspNetCore.Identity.UI >= 5.0.11",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.14",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.11",
+      "Microsoft.EntityFrameworkCore.InMemory >= 5.0.15",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "Pomelo.EntityFrameworkCore.MySql >= 5.0.2",
       "Serilog.AspNetCore >= 5.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nath\\.nuget\\packages\\": {}
+    "C:\\Users\\CHON\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Web\\GymManager.Web.csproj",
+      "projectUniqueName": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Web\\GymManager.Web.csproj",
       "projectName": "GymManager.Web",
-      "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Web\\GymManager.Web.csproj",
-      "packagesPath": "C:\\Users\\Nath\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Web\\obj\\",
+      "projectPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Web\\GymManager.Web.csproj",
+      "packagesPath": "C:\\Users\\CHON\\.nuget\\packages\\",
+      "outputPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CHON\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5605,14 +5632,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.ApplicationServices\\GymManager.ApplicationServices.csproj": {
-              "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.ApplicationServices\\GymManager.ApplicationServices.csproj"
+            "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.ApplicationServices\\GymManager.ApplicationServices.csproj": {
+              "projectPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.ApplicationServices\\GymManager.ApplicationServices.csproj"
             },
-            "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj": {
-              "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj"
+            "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj": {
+              "projectPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.Core\\GymManager.Core.csproj"
             },
-            "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\GymManager.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Nath\\Documents\\Academia .Net\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\GymManager.DataAccess.csproj"
+            "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\GymManager.DataAccess.csproj": {
+              "projectPath": "D:\\Academia DOTNET\\DN_Nathalie_Herrera\\Tema 6 - AspNetCore MVC con Entity Framework\\E3\\GymManager.Web\\GymManager.DataAccess\\GymManager.DataAccess.csproj"
             }
           }
         }
@@ -5640,6 +5667,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.11, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[5.0.15, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -5672,7 +5703,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

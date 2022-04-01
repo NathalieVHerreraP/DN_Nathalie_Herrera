@@ -94,3 +94,15 @@ C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MV
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\ref\GymManager.Core.dll
 C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.pdb
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\bin\Debug\net5.0\GymManager.Core.deps.json
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\bin\Debug\net5.0\GymManager.Core.dll
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\bin\Debug\net5.0\GymManager.Core.pdb
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.csproj.AssemblyReference.cache
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.AssemblyInfoInputs.cache
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.AssemblyInfo.cs
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.csproj.CoreCompileInputs.cache
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.dll
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\refint\GymManager.Core.dll
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\GymManager.Core.pdb
+D:\Academia DOTNET\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.Core\obj\Debug\net5.0\ref\GymManager.Core.dll

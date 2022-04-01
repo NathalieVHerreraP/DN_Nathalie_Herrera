@@ -30,10 +30,15 @@ namespace GymManager.WebApi
         {
             string connectionString = Configuration.GetConnectionString("Default");
 
+            /*
             services.AddDbContext<GymManagerContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
 
                 );
+            */
+
+            services.AddDbContext<GymManagerContext>(options =>
+                options.UseInMemoryDatabase(databaseName: "gymmanageref"));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
