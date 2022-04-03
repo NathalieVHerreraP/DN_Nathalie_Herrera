@@ -1,8 +1,10 @@
-﻿using System;
+﻿using GymManager.Core.Members;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace GymManager.DataAccess.Repositories
 {
@@ -82,5 +84,39 @@ namespace GymManager.DataAccess.Repositories
                 throw new Exception($"{nameof(entity)} could not be updated: {ex.Message}");
             }
         }
+
+        public virtual IQueryable<TEntity> GetAllMembership()
+        {
+            try
+            {
+                return _context.Set<TEntity>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Couldn't retrieve entities: {ex.Message}");
+            }
+        }
+
+        public virtual async Task<TEntity> UpdateMemberMembership(TEntity entity)
+        {
+            if (entity == null)
+            {
+                throw new ArgumentNullException($"{nameof(AddAsync)} entry must not be null");
+            }
+
+            try
+            {
+                _context.Update(entity);
+                await _context.SaveChangesAsync();
+
+                return entity;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{nameof(entity)} could not be updated: {ex.Message}");
+            }
+        }
+
+
     }
 }

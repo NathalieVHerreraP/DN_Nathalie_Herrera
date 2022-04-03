@@ -12,13 +12,11 @@ namespace GymManager.Web.Controllers
     public class MembershipTypesController : Controller
     {
         private readonly iMembershipTypesAppService _membershipAppService;
-        private readonly iMembersAppService _membersAppService;
  
 
-        public MembershipTypesController(iMembershipTypesAppService membershipAppService, iMembersAppService membersAppService)
+        public MembershipTypesController(iMembershipTypesAppService membershipAppService)
         {
             _membershipAppService = membershipAppService;
-            _membersAppService = membersAppService;
             
         }
 
@@ -33,33 +31,16 @@ namespace GymManager.Web.Controllers
             return View(viewModel);
         }
 
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            List<Member> members = await _membersAppService.GetMembersAsync();
-
-            MembershipTypesViewModel viewModel = new MembershipTypesViewModel();
-
-            viewModel.Members = members;
-
-            return View(viewModel);
+            return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(MembershipTypesViewModel viewModel)
+        public async Task<IActionResult> Create(MembershipType viewModel)
         {
-            MembershipType membership = new MembershipType 
-            {
-                Type = viewModel.Type,
-                Cost = viewModel.Cost,
-                Member = new Member 
-                { 
-                    Id = viewModel.MemberId.Id 
-                },
-                MonthsDuration = viewModel.MonthsDuration,
-                StartingDate = viewModel.StartingDate
-            };
-            
-            await _membershipAppService.AddMembershipAsync(membership);
+                      
+            await _membershipAppService.AddMembershipAsync(viewModel);
 
             return RedirectToAction("index");
         }
@@ -76,17 +57,6 @@ namespace GymManager.Web.Controllers
         {
 
             MembershipType membership = await _membershipAppService.GetMembershipAsync(membershipId);
-            List<Member> members = await _membersAppService.GetMembersAsync();
-
-            MembershipTypesViewModel viewModel = new MembershipTypesViewModel();
-
-            viewModel.Members = members;
-            viewModel.Id = membership.Id;
-            viewModel.Type = membership.Type;
-            viewModel.Cost = membership.Cost;
-            viewModel.MemberId = membership.Member;
-            viewModel.MonthsDuration = membership.MonthsDuration;
-            viewModel.StartingDate = membership.StartingDate;
 
             return View(membership);
         }

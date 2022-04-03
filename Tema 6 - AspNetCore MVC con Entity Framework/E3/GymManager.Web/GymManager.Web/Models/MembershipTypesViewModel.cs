@@ -13,14 +13,10 @@ namespace GymManager.Web.Models
 
         public string Type { get; set; }
 
+
         public decimal Cost { get; set; }
 
-        public DateTime StartingDate { get; set; }
 
         public int MonthsDuration { get; set; }
-
-        public Member MemberId { get; set; }
-
-        public List<Member> Members { get; set; }
     }
 }

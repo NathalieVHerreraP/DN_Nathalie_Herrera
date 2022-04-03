@@ -4,34 +4,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@section Head{
-
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
-    <link href="~/lib/jqueryui/jquery-ui.min.css" rel="stylesheet" />
-
-    <link href="~/lib/jqueryui/jquery-ui.structure.min.css" rel="stylesheet" />
-
-    <link href="~/lib/jqueryui/jquery-ui.theme.min.css" rel="stylesheet" />
-
-}
-
-@section Scripts{
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"></script>
-
-    <script src="~/lib/jqueryui/jquery-ui.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
-
-    <script src="~/Views/MembershipTypes/Create.js"></script>
-
-}
 
 <div class="container">
 
@@ -47,37 +19,17 @@
 
         <div class="mb-3">
             <label asp-for="Cost" class="form-label">Cost</label>
-            <input type="number" class="form-control" asp-for="Cost" />
+            <input type="number" step="0.01" class="form-control" asp-for="Cost" />
             <span asp-validation-for="Cost" class="text-danger"></span>
 
         </div>
 
-        <div class="mb-3">
-            <label asp-for="StartingDate" class="form-label">Starting Date</label>
-            <input class="form-control" asp-for="StartingDate" />
-            <span asp-validation-for="StartingDate" class="text-danger"></span>
-        </div>
 
         <div class="mb-3">
             <label asp-for="MonthsDuration" class="form-label">Duration in Months</label>
             <input type="number" class="form-control" asp-for="MonthsDuration" />
             <span asp-validation-for="MonthsDuration" class="text-danger"></span>
 
-        </div>
-
-
-        <div class="mb-3">
-
-            <label asp-for="MemberId" class="form-label">Member</label>
-            <select class="form-control" asp-for="MemberId">
-
-                @foreach (var member in Model.Members)
-                {
-                <option value="@member.Id">@member.Name @member.LastName</option>
-                }
-
-            </select>
-            <span asp-validation-for="MemberId" class="text-danger"></span>
         </div>
 
         <button type="submit" class="btn btn-primary mb-3">Submit</button>

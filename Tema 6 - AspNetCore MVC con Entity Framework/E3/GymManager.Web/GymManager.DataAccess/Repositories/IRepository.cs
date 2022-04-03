@@ -13,5 +13,10 @@ namespace GymManager.DataAccess.Repositories
         Task<TEntity> AddAsync(TEntity entity);
         Task<TEntity> UpdateAsync(TEntity entity);
         Task DeleteAsync(Tid id);
+
+        IQueryable<TEntity> GetAllMembership();
+
+        Task<TEntity> UpdateMemberMembership(TEntity entity);
+
     }
 }

@@ -71,7 +71,7 @@ namespace GymManager.Web
 
             services.AddTransient<IRepository<int, Member>, MembersRespository>();
             services.AddTransient<IRepository<int, EquipmentType>, Repository<int, EquipmentType>>();
-            services.AddTransient<IRepository<int, MembershipType>, MembershipTypesRepository>();
+            services.AddTransient<IRepository<int, MembershipType>, Repository<int, MembershipType>>();
 
 
 

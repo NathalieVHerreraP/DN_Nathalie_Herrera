@@ -34,6 +34,11 @@ namespace GymManager.ApplicationServices.Members
             await _repository.UpdateAsync(member);
         }
 
+        public async Task<List<Member>> GetMemberMembership()
+        {
+            return await _repository.GetAllMembership().ToListAsync();
+        }
+
         public async Task<Member> GetMemberAsync(int memberId)
         {
             return await _repository.GetAsync(memberId);
@@ -42,6 +47,11 @@ namespace GymManager.ApplicationServices.Members
         public async Task<List<Member>> GetMembersAsync()
         {
             return await _repository.GetAll().ToListAsync();
+        }
+
+        public async Task UpdateMembership(Member member)
+        {
+            await _repository.UpdateMemberMembership(member);
         }
     }
 }

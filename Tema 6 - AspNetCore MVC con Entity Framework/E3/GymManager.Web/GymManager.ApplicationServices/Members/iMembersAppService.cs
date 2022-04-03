@@ -19,6 +19,10 @@ namespace GymManager.ApplicationServices.Members
 
         Task EditMemberAsync(Member member);
 
+        Task UpdateMembership(Member member);
+
+        Task<List<Member>> GetMemberMembership();
+
 
     }
 }

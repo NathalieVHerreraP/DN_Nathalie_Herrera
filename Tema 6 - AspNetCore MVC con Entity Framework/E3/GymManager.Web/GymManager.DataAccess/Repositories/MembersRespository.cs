@@ -34,6 +34,27 @@ namespace GymManager.DataAccess.Repositories
             return member;
         }
 
+        public override IQueryable<Member> GetAllMembership() 
+        {
+            var members = Context.Members.Include(x => x.MembershipType);
+
+            return members;
+        }
+
+        public override async Task<Member> UpdateMemberMembership(Member entity)
+        {
+            var membership = await Context.MembershipTypes.FindAsync(entity.MembershipType.Id);
+            var member = await Context.Members.FindAsync(entity.Id);
+            Context.Remove(member);
+            entity.MembershipType = null;
+            await Context.Members.AddAsync(entity);
+            membership.Members.Add(entity);
+
+            await Context.SaveChangesAsync();
+
+            return entity;
+
+        }
 
     }
 }

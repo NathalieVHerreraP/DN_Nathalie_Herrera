@@ -20,14 +20,14 @@ namespace GymManager.Core.Members
         [Required]
         public decimal Cost { get; set; }
 
-        [BindProperty, DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime StartingDate { get; set; }
-
         [Required]
         public int MonthsDuration { get; set; }
 
-        [Required]
-        public Member Member { get; set; }
+        public List<Member> Members { get; set; }
 
+        public MembershipType()
+        {
+            Members = new List<Member>();
+        }
     }
 }
