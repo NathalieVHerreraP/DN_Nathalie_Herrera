@@ -1,0 +1,69 @@
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.deps.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.runtimeconfig.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.runtimeconfig.dev.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\ref\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.AssemblyInfo.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\ref\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 3 - NetProjects\T7\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.genruntimeconfig.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.deps.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.runtimeconfig.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.runtimeconfig.dev.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\ref\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.Core.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.Core.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.AssemblyInfo.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.CopyComplete
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\ref\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E2\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.genruntimeconfig.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.deps.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.runtimeconfig.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.runtimeconfig.dev.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\ref\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.Core.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.Core.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.AssemblyInfo.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.CopyComplete
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\ref\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T6\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.genruntimeconfig.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.deps.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.runtimeconfig.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.runtimeconfig.dev.json
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\ref\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.DataAccess.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.Core.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\bin\Debug\net5.0\GymManager.Core.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.AssemblyInfo.cs
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.csproj.CopyComplete
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\ref\GymManager.DataAccess.dll
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\E3\GymManager.Web\GymManager.DataAccess\obj\Debug\net5.0\GymManager.DataAccess.genruntimeconfig.cache

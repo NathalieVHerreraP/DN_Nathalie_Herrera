@@ -1,0 +1,31 @@
+﻿@model GymManager.Web.Models.MembershipRenwalListViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+
+    <h3 class="mt-5">Membership Renwal</h3>
+
+    <form asp-action="Membership">
+
+         <div class="mb-3">
+
+            <input type="hidden" asp-for="Ids.MemberId" />
+
+            <label asp-for="Ids.MembershipId" class="form-label">Membership Type</label>
+            <select class="form-control" asp-for="Ids.MembershipId">
+                @foreach (var membership in Model.membershipTypes)
+                {
+                <option value="@membership.Id">@membership.Type $@membership.Cost 📅@membership.MonthsDuration</option>
+                }
+            </select>
+            <span asp-validation-for="Ids.MembershipId" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+
+    </form>
+</div>
