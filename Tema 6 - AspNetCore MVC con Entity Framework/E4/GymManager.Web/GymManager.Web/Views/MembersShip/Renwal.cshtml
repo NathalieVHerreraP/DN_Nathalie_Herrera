@@ -1,0 +1,63 @@
+﻿@model GymManager.Web.Models.MemberListViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section HeaderRight{
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+}
+
+<div class="container">
+    <h1 class="mt-5">Members Renwal</h1>
+
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Birthday</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Membership</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var member in Model.Members)
+                {
+
+                <tr>
+                    <th scope="row">@member.Name</th>
+                    <td>@member.LastName</td>
+                    <td>@member.Birthday.ToString("dd/MM/yyyy")</td>
+                    <td>@member.Email</td>
+                    @if (member.MembershipType != null)
+                    {
+                        <td>@member.MembershipType.Type</td>
+                        <td>No Renwal needed</td>
+
+                    }
+                    else
+                    {
+                        <td>No Membership</td>
+                        <td>
+                            <a asp-action="Membership" class="btn btn-outline-info" asp-route-memberId="@member.Id">Renwal Membership</a>
+                        </td>
+
+                    }
+                </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+

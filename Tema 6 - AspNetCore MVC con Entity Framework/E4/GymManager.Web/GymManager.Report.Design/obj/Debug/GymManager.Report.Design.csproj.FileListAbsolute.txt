@@ -1,0 +1,11 @@
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\bin\Debug\GymManager.Report.Design.exe.config
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\bin\Debug\GymManager.Report.Design.exe
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\bin\Debug\GymManager.Report.Design.pdb
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\obj\Debug\GymManager.Report.Design.csproj.AssemblyReference.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\obj\Debug\GymManager.Report.Design.Properties.Resources.resources
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\obj\Debug\GymManager.Report.Design.csproj.GenerateResource.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\obj\Debug\RdlCompile.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\obj\Debug\RdlCompile.compiled
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\obj\Debug\GymManager.Report.Design.csproj.CoreCompileInputs.cache
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\obj\Debug\GymManager.Report.Design.exe
+C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Report.Design\obj\Debug\GymManager.Report.Design.pdb

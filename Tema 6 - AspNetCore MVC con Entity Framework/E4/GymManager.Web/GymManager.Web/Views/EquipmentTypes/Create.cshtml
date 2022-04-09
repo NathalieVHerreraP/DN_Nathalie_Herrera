@@ -1,0 +1,42 @@
+﻿@model GymManager.Core.Products.EquipmentType
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <h3 class="mt-5">EquipmentType Addition</h3>
+
+    <form asp-action="Create">
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" asp-for="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Brand" class="form-label">Brand</label>
+            <input type="text" class="form-control" asp-for="Brand" />
+            <span asp-validation-for="Brand" class="text-danger"></span>
+
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Cost" class="form-label">Cost</label>
+            <input type="number" step="0.01" class="form-control" asp-for="Cost" />
+            <span asp-validation-for="Cost" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Units" class="form-label">Units</label>
+            <input type="number" class="form-control" asp-for="Units" />
+            <span asp-validation-for="Units" class="text-danger"></span>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+
+    </form>
+</div>

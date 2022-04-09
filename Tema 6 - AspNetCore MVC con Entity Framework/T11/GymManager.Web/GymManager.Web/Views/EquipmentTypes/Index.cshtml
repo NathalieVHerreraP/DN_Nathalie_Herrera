@@ -1,0 +1,20 @@
+﻿@model GymManager.Web.Models.EquipmentTypeListViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1 class="mt-5">EquipmentTypes</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <a asp-action="Create" class="btn btn-outline-success">Add EquipmentType</a>
+        </div>
+
+    </div>
+
+    @await Html.PartialAsync("~/Views/Shared/_EquipmentList.cshtml", Model.EquipmentTypes)
+
+
+</div>

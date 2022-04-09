@@ -1,0 +1,39 @@
+2022-04-08 21:29:48.363 -05:00 [INF] Starting Web Host
+2022-04-08 21:30:13.930 -05:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-08 21:30:20.338 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-08 21:30:20.375 -05:00 [INF] Hosting environment: Development
+2022-04-08 21:30:20.500 -05:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Web
+2022-04-08 21:30:20.794 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-04-08 21:30:21.118 -05:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-04-08 21:30:21.427 -05:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-04-08 21:30:27.321 -05:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-04-08 21:30:28.821 -05:00 [INF] Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`MembershipTypeId`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-04-08 21:30:29.368 -05:00 [INF] Executing ViewResult, running view Index.
+2022-04-08 21:30:30.530 -05:00 [INF] Executed ViewResult - view Index executed in 1269.4401ms.
+2022-04-08 21:30:30.546 -05:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 9108.7249ms
+2022-04-08 21:30:30.726 -05:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-04-08 21:30:31.069 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 10284.4315ms
+2022-04-08 21:32:12.838 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Reports/Attendance - -
+2022-04-08 21:32:12.908 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44335/Reports/Attendance - - - 404 - - 69.9889ms
+2022-04-08 21:33:13.844 -05:00 [INF] Starting Web Host
+2022-04-08 21:33:21.765 -05:00 [INF] User profile is available. Using 'C:\Users\Nath\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-08 21:33:23.969 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-08 21:33:24.047 -05:00 [INF] Hosting environment: Development
+2022-04-08 21:33:24.082 -05:00 [INF] Content root path: C:\Users\Nath\Documents\Academia .Net\DN_Nathalie_Herrera\Tema 6 - AspNetCore MVC con Entity Framework\T11\GymManager.Web\GymManager.Web
+2022-04-08 21:33:24.237 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44335/ - -
+2022-04-08 21:33:24.642 -05:00 [INF] Executing endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-04-08 21:33:25.047 -05:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller GymManager.Web.Controllers.HomeController (GymManager.Web).
+2022-04-08 21:33:29.735 -05:00 [INF] Entity Framework Core 5.0.11 initialized 'GymManagerContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: ServerVersion 10.4.21-mariadb 
+2022-04-08 21:33:31.333 -05:00 [INF] Executed DbCommand (211ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`AllowNewsletter`, `m`.`Birthday`, `m`.`CityId`, `m`.`Email`, `m`.`LastName`, `m`.`MembershipTypeId`, `m`.`Membersince`, `m`.`Name`
+FROM `Members` AS `m`
+2022-04-08 21:33:31.952 -05:00 [INF] Executing ViewResult, running view Index.
+2022-04-08 21:33:32.925 -05:00 [INF] Executed ViewResult - view Index executed in 1036.5855ms.
+2022-04-08 21:33:33.148 -05:00 [INF] Executed action GymManager.Web.Controllers.HomeController.Index (GymManager.Web) in 8093.3964ms
+2022-04-08 21:33:33.600 -05:00 [INF] Executed endpoint 'GymManager.Web.Controllers.HomeController.Index (GymManager.Web)'
+2022-04-08 21:33:33.723 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44335/ - - - 200 - text/html;+charset=utf-8 9496.1898ms
+2022-04-08 21:33:41.221 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44335/Reports/Attendance - -
+2022-04-08 21:33:41.286 -05:00 [INF] Executing endpoint 'GymManager.Web.Controllers.ReportsController.Attendance (GymManager.Web)'
+2022-04-08 21:33:41.305 -05:00 [INF] Route matched with {action = "Attendance", controller = "Reports", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Attendance() on controller GymManager.Web.Controllers.ReportsController (GymManager.Web).
